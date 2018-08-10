@@ -17,6 +17,11 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link href="libs/jquery-backToTop.min.css" rel="stylesheet" type="text/css">
+
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
 	<!-- Windows Phone -->
@@ -30,7 +35,545 @@
 
 <!-- HTML - start -->
 
-	
+<div class="wrapper">
+	<section class="toolbar" id="home">
+		<div class="wrap">
+			<div class="toolbar_wrapper">
+				<div class="logo">
+					<img class="logo_item_icon" src="img/logos.png" alt="img_logo">
+					<img class="logo_item_text" src="img/Waxom.png" alt="img_logo">
+				</div>
+
+				<ul class="toolbar_block" id="menu">
+					<li class="toolbar_block_item"><a href="#" class="toolbar_block_item_link">Home</a></li>
+					<li class="toolbar_block_item"><a href="#top_gallery" class="toolbar_block_item_link">About Us</a></li>
+					<li class="toolbar_block_item"><a href="#main" class="toolbar_block_item_link">Portfolio</a></li>
+					<li class="toolbar_block_item"><a href="#video_item" class="toolbar_block_item_link">Features</a></li>
+					<li class="toolbar_block_item"><a href="#about" class="toolbar_block_item_link">Blog</a></li>
+					<li class="toolbar_block_item"><a href="#post" class="toolbar_block_item_link">Pricing</a></li>
+					<li class="toolbar_block_item"><a href="#partners" class="toolbar_block_item_link">Shortcodes</a></li>
+					<li class="toolbar_block_item"><a href="#footer" class="toolbar_block_item_link">Contact</a></li>
+					<li class="toolbar_block_item"><a href="#"><img class="toolbar_icon_cart " src="img/icon-cart.png" alt="img_cart"></a></li>
+					<!--<a href="#"><img class="toolbar_icon_cart " src="img/icon-cart.png" alt="img_cart"></a>-->
+				</ul>
+				<div class="toolbar_icon">
+					<!--<a href="#"><img class="toolbar_icon_cart" src="img/icon-cart.png" alt="img_cart"></a>-->
+					<a href="#"><img class="toolbar_icon_search" src="img/icon-search.png" alt="img_search"></a>
+				</div>
+				<div class="toolbar_menu_icon"><span></span>
+					<!--<div class="menu_icon btn_mnu"><svg xmlns="http://www.w3.org/2000/svg"  height="24" viewBox="0 0 24 24" width="24">-->
+						<!--<path d="M0 0h24v24H0z" fill="none"/>-->
+						<!--<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>-->
+					<!--</svg></div>-->
+					<!--<div class="menu_icon btn_clear"><svg xmlns="http://www.w3.org/2000/svg"  height="24" viewBox="0 0 24 24" width="24">-->
+						<!--<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>-->
+						<!--<path d="M0 0h24v24H0z" fill="none"/>-->
+					<!--</svg></div>-->
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="header_gallery">
+		<div class="header_gallery_wrapper">
+			<div class="gallery_center">
+				<p class="gallery_center_text">Unique and Modern Design</p>
+				<p class="gallery_center_name">Portfolio PSD Template</p>
+				<p class="gallery_center_information">Nam liber tempor soluta nobis eleifend option congue nihil imperdiet doming is quod mazim placerat facer possim assum.</p>
+				<button class="gallery_button button_style">GET STARTED</button>
+			</div>
+			<div class="gallery_items ">
+				<div class="gallery_item"><img src="img/photo.png" alt="images"></div>
+				<div class="gallery_item"><img src="img/photo.png" alt="images"></div>
+				<div class="gallery_item"><img src="img/photo.png" alt="images"></div>
+				<div class="gallery_item"><img src="img/photo.png" alt="images"></div>
+			</div>
+			<!--<button type="button" class="slick-prev" >Previous</button>-->
+			<!--<button type="button" class="slick-next">Next</button>-->
+		</div>
+	</section>
+	<section class="top_gallery" id="top_gallery">
+		<div class="wrap">
+			<div class="element">
+				<div class="element_block">
+					<div class="element_block_icon">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49px" height="49px" viewBox="0 0 49 49">
+							<filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
+								<feFlood flood-color="rgb(85,85,85)" result="coFloodOut1"/>
+								<feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+								<feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+							</filter>
+							<path  d="M 47.67 19.72C 47.67 19.72 33.4 33.99 33.4 33.99 33.4 33.99 0.53 48.46 0.53 48.46 0.53 48.46 15.01 15.59 15.01 15.59 15.01 15.59 29.28 1.33 29.28 1.33 29.9 0.71 30.9 0.71 31.53 1.33 32.15 1.95 32.15 2.95 31.53 3.58 31.53 3.58 17.68 17.42 17.68 17.42 17.68 17.42 9.11 36.89 9.11 36.89 9.11 36.89 12.11 39.89 12.11 39.89 12.11 39.89 31.57 31.31 31.57 31.31 31.57 31.31 45.42 17.47 45.42 17.47 46.04 16.85 47.04 16.85 47.67 17.47 48.29 18.09 48.29 19.1 47.67 19.72ZM 29.75 28.47C 29.43 28.77 29.03 28.93 28.62 28.93 28.21 28.93 27.81 28.77 27.5 28.47 26.88 27.84 26.88 26.84 27.5 26.22 27.5 26.22 40.83 12.88 40.83 12.88 41.45 12.26 42.45 12.26 43.08 12.88 43.7 13.51 43.7 14.51 43.08 15.13 43.08 15.13 29.75 28.47 29.75 28.47ZM 26.26 24.99C 25.95 25.29 25.55 25.45 25.14 25.45 24.73 25.45 24.33 25.29 24.02 24.99 23.39 24.36 23.39 23.35 24.02 22.73 24.02 22.73 37.35 9.4 37.35 9.4 37.97 8.78 38.97 8.78 39.6 9.4 40.22 10.02 40.22 11.03 39.6 11.65 39.6 11.65 26.26 24.99 26.26 24.99ZM 22.78 21.5C 22.47 21.81 22.07 21.97 21.66 21.97 21.25 21.97 20.84 21.81 20.53 21.5 19.91 20.88 19.91 19.87 20.53 19.25 20.53 19.25 33.87 5.92 33.87 5.92 34.49 5.3 35.5 5.3 36.12 5.92 36.74 6.54 36.74 7.55 36.12 8.17 36.12 8.17 22.78 21.5 22.78 21.5Z"/></svg>
+					</div>
+					<p class="element_block_name">Web & App Design</p>
+					<p class="element_block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur culpa doloremque eum, eveniet fuga fugiat harum hic illum ipsam necessitatibus nihil numquam obcaecati provident quam quibusdam, reiciendis similique, voluptatibus.25</p>
+					<p class="element_block_line"></p>
+				</div>
+				<div class="element_block">
+					<div class="element_block_icon">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="40px" viewBox="0 0 44 40">
+							<filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
+								<feFlood flood-color="rgb(199,178,153)" result="coFloodOut1"/>
+								<feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+								<feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+							</filter>
+							<path  d="M 0.41 19.7C 0.41 19.7 4.4 17.55 4.4 17.55 4.4 17.55 21.85 26.96 21.85 26.96 21.85 26.96 39.3 17.55 39.3 17.55 39.3 17.55 43.29 19.7 43.29 19.7 43.29 19.7 21.85 31.25 21.85 31.25 21.85 31.25 0.41 19.7 0.41 19.7ZM 0.41 11.67C 0.41 11.67 21.85 0.11 21.85 0.11 21.85 0.11 43.29 11.67 43.29 11.67 43.29 11.67 21.85 23.23 21.85 23.23 21.85 23.23 0.41 11.67 0.41 11.67ZM 21.85 34.98C 21.85 34.98 39.3 25.57 39.3 25.57 39.3 25.57 43.29 27.72 43.29 27.72 43.29 27.72 21.85 39.28 21.85 39.28 21.85 39.28 0.41 27.72 0.41 27.72 0.41 27.72 4.4 25.57 4.4 25.57 4.4 25.57 21.85 34.98 21.85 34.98Z" /></svg>
+					</div>
+					<p class="element_block_name">Development</p>
+					<p class="element_block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur culpa doloremque eum, eveniet fuga fugiat harum hic illum ipsam necessitatibus nihil numquam obcaecati provident quam quibusdam, reiciendis similique, voluptatibus.25</p>
+					<p class="element_block_line"></p>
+				</div>
+				<div class="element_block">
+					<div class="element_block_icon">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44">
+							<filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
+								<feFlood flood-color="rgb(85,85,85)" result="coFloodOut1"/>
+								<feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+								<feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+							</filter>
+							<path  d="M 43.93 21.85C 43.93 20.23 42.76 18.5 41.32 17.99 39.88 17.48 38.49 16.24 38.08 15.25 37.68 14.27 37.78 12.4 38.44 11.02 39.09 9.64 38.69 7.59 37.55 6.44 36.4 5.3 34.36 4.9 32.98 5.56 31.6 6.21 29.73 6.32 28.75 5.91 27.76 5.51 26.52 4.11 26.01 2.67 25.49 1.23 23.76 0.07 22.14 0.07 20.52 0.07 18.79 1.23 18.28 2.67 17.77 4.11 16.52 5.51 15.54 5.91 14.56 6.32 12.69 6.21 11.31 5.56 9.93 4.9 7.88 5.3 6.74 6.44 5.59 7.59 5.19 9.64 5.85 11.02 6.51 12.4 6.61 14.27 6.2 15.25 5.8 16.23 4.41 17.48 2.97 17.99 1.53 18.5 0.36 20.23 0.36 21.85 0.36 23.47 1.53 25.2 2.97 25.71 4.41 26.22 5.8 27.47 6.21 28.45 6.61 29.43 6.51 31.3 5.85 32.68 5.19 34.06 5.59 36.11 6.74 37.26 7.88 38.4 9.93 38.8 11.31 38.14 12.69 37.49 14.56 37.38 15.54 37.79 16.52 38.2 17.77 39.59 18.28 41.03 18.79 42.47 20.52 43.63 22.14 43.63 23.76 43.63 25.49 42.47 26.01 41.03 26.52 39.59 27.76 38.2 28.74 37.79 29.73 37.38 31.6 37.49 32.98 38.14 34.36 38.8 36.4 38.4 37.55 37.26 38.69 36.11 39.09 34.06 38.44 32.68 37.78 31.3 37.67 29.43 38.08 28.45 38.48 27.47 39.88 26.22 41.32 25.71 42.76 25.2 43.93 23.47 43.93 21.85ZM 22.14 29.84C 17.72 29.84 14.15 26.27 14.15 21.86 14.15 17.44 17.72 13.87 22.14 13.87 26.55 13.87 30.13 17.44 30.13 21.86 30.13 26.27 26.55 29.84 22.14 29.84Z"/></svg>
+					</div>
+					<p class="element_block_name">Customization</p>
+					<p class="element_block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur culpa doloremque eum, eveniet fuga fugiat harum hic illum ipsam necessitatibus nihil numquam obcaecati provident quam quibusdam, reiciendis similique, voluptatibus.25</p>
+					<div class="element_block_line"></div>
+				</div>
+				<div class="element_block">
+					<div class="element_block_icon">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52px" height="36px" viewBox="0 0 52 36">
+							<filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
+								<feFlood flood-color="rgb(85,85,85)" result="coFloodOut1"/>
+								<feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+								<feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+							</filter>
+							<path d="M 51.41 14.34C 51.41 14.34 41.92 33.76 41.92 33.76 41.33 34.98 39.73 35.98 38.38 35.98 38.38 35.98 3.08 35.98 3.08 35.98 1.73 35.98 1.11 34.98 1.71 33.76 1.71 33.76 11.2 14.34 11.2 14.34 11.8 13.12 13.39 12.12 14.74 12.12 14.74 12.12 50.04 12.12 50.04 12.12 51.39 12.12 52.01 13.12 51.41 14.34ZM 9 13.25C 9 13.25 0.74 30.15 0.74 30.15 0.74 30.15 0.74 7.98 0.74 7.98 0.74 6.62 1.84 5.5 3.2 5.5 3.2 5.5 14.01 5.5 14.01 5.5 14.01 5.5 14.01 4.06 14.01 4.06 14.01 3.06 14.39 2.13 15.09 1.43 15.79 0.72 16.72 0.33 17.7 0.33 17.7 0.33 23.99 0.33 23.99 0.33 26.02 0.33 27.67 2 27.67 4.06 27.67 4.06 27.67 5.5 27.67 5.5 27.67 5.5 38.49 5.5 38.49 5.5 39.84 5.5 40.95 6.62 40.95 7.98 40.95 7.98 40.95 9.64 40.95 9.64 40.95 9.64 14.74 9.64 14.74 9.64 12.47 9.64 10 11.19 9 13.25ZM 16.47 5.5C 16.47 5.5 25.22 5.5 25.22 5.5 25.22 5.5 25.22 4.06 25.22 4.06 25.22 3.37 24.67 2.82 23.99 2.82 23.99 2.82 17.7 2.82 17.7 2.82 17.37 2.82 17.06 2.94 16.83 3.18 16.6 3.42 16.47 3.73 16.47 4.06 16.47 4.06 16.47 5.5 16.47 5.5Z" /></svg>
+					</div>
+					<p class="element_block_name">Marketing</p>
+					<p class="element_block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur culpa doloremque eum, eveniet fuga fugiat harum hic illum ipsam necessitatibus nihil numquam obcaecati provident quam quibusdam, reiciendis similique, voluptatibus.25</p>
+					<p class="element_block_line"></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="images">
+		<div class="wrap">
+			<div class="images_wrapper">
+				<div class="images_block">
+					<p class="images_block_name">Waxom is Realization of your ideas</p>
+					<p class="images_block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque enim esse ipsa maxime modi quasi quis repellat soluta tempora ullam!</p>
+				</div>
+				<div class="images_block_item">
+					<img src="img/browser-left.png" alt="img" class="images_block_item_left">
+					<img src="img/browser-center.png" alt="img" class="images_block_item_center">
+					<img src="img/browser-right.png" alt="img" class="images_block_item_right">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="button_gallery">
+		<div class="wrap">
+			<div class="button_gallery_wrapper">
+				<div class="button_gallery_block">
+					<div class="button_gallery_name"><span>Waxom</span> Multipurpose WordPress Theme</div>
+					<div class="button_gallery_text">Don't Forget Rate the Template. Thank so much!</div>
+				</div>
+				<button class="button_gallery_button button_style">PURCHASE NOW</button>
+			</div>
+		</div>
+	</section>
+	<section class="main" id="main">
+		<div class="wrap">
+			<div class="main_wrapper">
+				<div class="main_name">Our Latest Project.</div>
+				<div class="main_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, cum eaque impedit inventore libero molestias perferendis possimus quae sunt velit.</div>
+				<div class="button_wrapper">
+					<button class="button_item">All</button>
+					<button class="button_item">Web Design</button>
+					<button class="button_item">Mobile App</button>
+					<button class="button_item">Illustration</button>
+					<button class="button_item">Photography</button>
+				</div>
+			</div>
+            <div class="gallery_wrapper_block">
+                <div class="gallery_wrapper">
+                    <div class="box_images"><img src="img/photo1.png" style="max-width: 100%" alt="img">
+                        <div class="container">
+                            <a href="#" class="container_item"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="26px" viewBox="0 0 26 26"><path  d="M 23.5 11.24C 23.5 11.24 21.57 13.17 21.57 13.17 21.57 13.17 18.39 16.36 18.39 16.36 18.23 16.53 18.05 16.68 17.87 16.82 16.1 18.22 13.75 18.52 11.72 17.72 10.97 17.43 10.26 16.97 9.64 16.36 9.64 16.36 12.28 13.71 12.28 13.71 13.24 14.67 14.79 14.67 15.74 13.71 15.74 13.71 17.77 11.69 17.77 11.69 17.77 11.69 20.86 8.6 20.86 8.6 21.81 7.64 21.81 6.09 20.86 5.14 19.9 4.18 18.35 4.18 17.4 5.14 17.4 5.14 14.94 7.59 14.94 7.59 13.41 6.88 11.65 6.76 10.03 7.22 10.03 7.22 14.76 2.49 14.76 2.49 17.16 0.09 21.1 0.09 23.5 2.49 25.92 4.91 25.92 8.84 23.5 11.24ZM 14.26 8.29C 15.01 8.58 15.73 9.04 16.34 9.66 16.34 9.66 13.7 12.3 13.7 12.3 12.74 11.35 11.19 11.35 10.24 12.3 10.24 12.3 5.13 17.42 5.13 17.42 4.17 18.37 4.17 19.92 5.13 20.88 6.08 21.83 7.63 21.83 8.59 20.88 8.59 20.88 10.94 18.52 10.94 18.52 12.95 19.33 13.49 19.39 15.85 18.85 15.85 18.85 11.23 23.52 11.23 23.52 8.82 25.93 4.89 25.93 2.48 23.52 0.08 21.12 0.08 17.18 2.48 14.77 2.48 14.77 7.6 9.66 7.6 9.66 7.67 9.59 7.75 9.5 7.84 9.43 9.63 7.83 12.13 7.44 14.26 8.29Z" /></svg></a>
+                            <a href="#" class="container_item"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="25px" viewBox="0 0 26 25"><path  d="M 25.46 24.17C 25.14 24.49 24.71 24.65 24.29 24.65 23.87 24.65 23.45 24.49 23.13 24.17 23.13 24.17 18.79 19.9 18.79 19.9 16.9 21.35 14.53 22.22 11.96 22.22 5.79 22.22 0.78 17.28 0.78 11.2 0.78 5.13 5.79 0.19 11.96 0.19 18.12 0.19 23.14 5.13 23.14 11.2 23.14 13.57 22.37 15.76 21.07 17.56 21.07 17.56 25.46 21.88 25.46 21.88 26.1 22.51 26.1 23.54 25.46 24.17ZM 11.96 2.78C 7.24 2.78 3.41 6.56 3.41 11.2 3.41 15.85 7.24 19.63 11.96 19.63 14.06 19.63 15.99 18.87 17.48 17.62 17.94 17.24 18.36 16.81 18.72 16.34 19.84 14.91 20.51 13.13 20.51 11.2 20.51 6.56 16.67 2.78 11.96 2.78ZM 16.81 9.58C 16.62 9.67 16.43 9.71 16.23 9.71 15.75 9.71 15.28 9.44 15.05 8.98 14.35 7.56 12.91 6.67 11.3 6.67 10.58 6.67 9.99 6.09 9.99 5.38 9.99 4.66 10.58 4.08 11.3 4.08 13.92 4.08 16.27 5.52 17.42 7.85 17.74 8.49 17.46 9.27 16.81 9.58Z"/></svg></a>
+                            <div class="container_item_triangle"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="10px" viewBox="0 0 30 10"><path  d="M 15-0C 15-0 30.01 10 30.01 10 30.01 10-0.01 10-0.01 10-0.01 10 15-0 15-0Z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="box_text">
+                        <p class="box_text_name">Claritas Etiam Processus</p>
+                        <div class="box_text_main">Photography Nature</div>
+                    </div>
+                </div>
+                <div class="gallery_wrapper">
+                    <div class="box_images"><img src="img/photo2.png" style="max-width: 100%" alt="img">
+                        <div class="container">
+                            <a href="#" class="container_item"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="26px" viewBox="0 0 26 26"><path  d="M 23.5 11.24C 23.5 11.24 21.57 13.17 21.57 13.17 21.57 13.17 18.39 16.36 18.39 16.36 18.23 16.53 18.05 16.68 17.87 16.82 16.1 18.22 13.75 18.52 11.72 17.72 10.97 17.43 10.26 16.97 9.64 16.36 9.64 16.36 12.28 13.71 12.28 13.71 13.24 14.67 14.79 14.67 15.74 13.71 15.74 13.71 17.77 11.69 17.77 11.69 17.77 11.69 20.86 8.6 20.86 8.6 21.81 7.64 21.81 6.09 20.86 5.14 19.9 4.18 18.35 4.18 17.4 5.14 17.4 5.14 14.94 7.59 14.94 7.59 13.41 6.88 11.65 6.76 10.03 7.22 10.03 7.22 14.76 2.49 14.76 2.49 17.16 0.09 21.1 0.09 23.5 2.49 25.92 4.91 25.92 8.84 23.5 11.24ZM 14.26 8.29C 15.01 8.58 15.73 9.04 16.34 9.66 16.34 9.66 13.7 12.3 13.7 12.3 12.74 11.35 11.19 11.35 10.24 12.3 10.24 12.3 5.13 17.42 5.13 17.42 4.17 18.37 4.17 19.92 5.13 20.88 6.08 21.83 7.63 21.83 8.59 20.88 8.59 20.88 10.94 18.52 10.94 18.52 12.95 19.33 13.49 19.39 15.85 18.85 15.85 18.85 11.23 23.52 11.23 23.52 8.82 25.93 4.89 25.93 2.48 23.52 0.08 21.12 0.08 17.18 2.48 14.77 2.48 14.77 7.6 9.66 7.6 9.66 7.67 9.59 7.75 9.5 7.84 9.43 9.63 7.83 12.13 7.44 14.26 8.29Z" /></svg></a>
+                            <a href="#" class="container_item"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="25px" viewBox="0 0 26 25"><path  d="M 25.46 24.17C 25.14 24.49 24.71 24.65 24.29 24.65 23.87 24.65 23.45 24.49 23.13 24.17 23.13 24.17 18.79 19.9 18.79 19.9 16.9 21.35 14.53 22.22 11.96 22.22 5.79 22.22 0.78 17.28 0.78 11.2 0.78 5.13 5.79 0.19 11.96 0.19 18.12 0.19 23.14 5.13 23.14 11.2 23.14 13.57 22.37 15.76 21.07 17.56 21.07 17.56 25.46 21.88 25.46 21.88 26.1 22.51 26.1 23.54 25.46 24.17ZM 11.96 2.78C 7.24 2.78 3.41 6.56 3.41 11.2 3.41 15.85 7.24 19.63 11.96 19.63 14.06 19.63 15.99 18.87 17.48 17.62 17.94 17.24 18.36 16.81 18.72 16.34 19.84 14.91 20.51 13.13 20.51 11.2 20.51 6.56 16.67 2.78 11.96 2.78ZM 16.81 9.58C 16.62 9.67 16.43 9.71 16.23 9.71 15.75 9.71 15.28 9.44 15.05 8.98 14.35 7.56 12.91 6.67 11.3 6.67 10.58 6.67 9.99 6.09 9.99 5.38 9.99 4.66 10.58 4.08 11.3 4.08 13.92 4.08 16.27 5.52 17.42 7.85 17.74 8.49 17.46 9.27 16.81 9.58Z"/></svg></a>
+                            <div class="container_item_triangle"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="10px" viewBox="0 0 30 10"><path  d="M 15-0C 15-0 30.01 10 30.01 10 30.01 10-0.01 10-0.01 10-0.01 10 15-0 15-0Z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="box_text">
+                        <p class="box_text_name">Quam_Nutamus_Farum</p>
+                        <div class="box_text_main">Graphic Design, Mock_Up</div>
+                    </div>
+                </div>
+                <div class="gallery_wrapper">
+                    <div class="box_images"><img src="img/photo3.png" style="max-width: 100%"  alt="img">
+                        <div class="container">
+                            <a href="#" class="container_item"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="26px" viewBox="0 0 26 26"><path  d="M 23.5 11.24C 23.5 11.24 21.57 13.17 21.57 13.17 21.57 13.17 18.39 16.36 18.39 16.36 18.23 16.53 18.05 16.68 17.87 16.82 16.1 18.22 13.75 18.52 11.72 17.72 10.97 17.43 10.26 16.97 9.64 16.36 9.64 16.36 12.28 13.71 12.28 13.71 13.24 14.67 14.79 14.67 15.74 13.71 15.74 13.71 17.77 11.69 17.77 11.69 17.77 11.69 20.86 8.6 20.86 8.6 21.81 7.64 21.81 6.09 20.86 5.14 19.9 4.18 18.35 4.18 17.4 5.14 17.4 5.14 14.94 7.59 14.94 7.59 13.41 6.88 11.65 6.76 10.03 7.22 10.03 7.22 14.76 2.49 14.76 2.49 17.16 0.09 21.1 0.09 23.5 2.49 25.92 4.91 25.92 8.84 23.5 11.24ZM 14.26 8.29C 15.01 8.58 15.73 9.04 16.34 9.66 16.34 9.66 13.7 12.3 13.7 12.3 12.74 11.35 11.19 11.35 10.24 12.3 10.24 12.3 5.13 17.42 5.13 17.42 4.17 18.37 4.17 19.92 5.13 20.88 6.08 21.83 7.63 21.83 8.59 20.88 8.59 20.88 10.94 18.52 10.94 18.52 12.95 19.33 13.49 19.39 15.85 18.85 15.85 18.85 11.23 23.52 11.23 23.52 8.82 25.93 4.89 25.93 2.48 23.52 0.08 21.12 0.08 17.18 2.48 14.77 2.48 14.77 7.6 9.66 7.6 9.66 7.67 9.59 7.75 9.5 7.84 9.43 9.63 7.83 12.13 7.44 14.26 8.29Z" /></svg></a>
+                            <a href="#" class="container_item"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="25px" viewBox="0 0 26 25"><path  d="M 25.46 24.17C 25.14 24.49 24.71 24.65 24.29 24.65 23.87 24.65 23.45 24.49 23.13 24.17 23.13 24.17 18.79 19.9 18.79 19.9 16.9 21.35 14.53 22.22 11.96 22.22 5.79 22.22 0.78 17.28 0.78 11.2 0.78 5.13 5.79 0.19 11.96 0.19 18.12 0.19 23.14 5.13 23.14 11.2 23.14 13.57 22.37 15.76 21.07 17.56 21.07 17.56 25.46 21.88 25.46 21.88 26.1 22.51 26.1 23.54 25.46 24.17ZM 11.96 2.78C 7.24 2.78 3.41 6.56 3.41 11.2 3.41 15.85 7.24 19.63 11.96 19.63 14.06 19.63 15.99 18.87 17.48 17.62 17.94 17.24 18.36 16.81 18.72 16.34 19.84 14.91 20.51 13.13 20.51 11.2 20.51 6.56 16.67 2.78 11.96 2.78ZM 16.81 9.58C 16.62 9.67 16.43 9.71 16.23 9.71 15.75 9.71 15.28 9.44 15.05 8.98 14.35 7.56 12.91 6.67 11.3 6.67 10.58 6.67 9.99 6.09 9.99 5.38 9.99 4.66 10.58 4.08 11.3 4.08 13.92 4.08 16.27 5.52 17.42 7.85 17.74 8.49 17.46 9.27 16.81 9.58Z"/></svg></a>
+                            <div class="container_item_triangle"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="10px" viewBox="0 0 30 10"><path  d="M 15-0C 15-0 30.01 10 30.01 10 30.01 10-0.01 10-0.01 10-0.01 10 15-0 15-0Z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="box_text">
+                        <p class="box_text_name">Lorem ipsum dolor.</p>
+                        <div class="box_text_main">Lorem ipsum.</div>
+                    </div>
+                </div>
+                <div class="gallery_wrapper">
+                    <div class="box_images"><img src="img/photo4.png" style="max-width: 100%" alt="img">
+                        <div class="container">
+                            <a href="#" class="container_item"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="26px" viewBox="0 0 26 26"><path  d="M 23.5 11.24C 23.5 11.24 21.57 13.17 21.57 13.17 21.57 13.17 18.39 16.36 18.39 16.36 18.23 16.53 18.05 16.68 17.87 16.82 16.1 18.22 13.75 18.52 11.72 17.72 10.97 17.43 10.26 16.97 9.64 16.36 9.64 16.36 12.28 13.71 12.28 13.71 13.24 14.67 14.79 14.67 15.74 13.71 15.74 13.71 17.77 11.69 17.77 11.69 17.77 11.69 20.86 8.6 20.86 8.6 21.81 7.64 21.81 6.09 20.86 5.14 19.9 4.18 18.35 4.18 17.4 5.14 17.4 5.14 14.94 7.59 14.94 7.59 13.41 6.88 11.65 6.76 10.03 7.22 10.03 7.22 14.76 2.49 14.76 2.49 17.16 0.09 21.1 0.09 23.5 2.49 25.92 4.91 25.92 8.84 23.5 11.24ZM 14.26 8.29C 15.01 8.58 15.73 9.04 16.34 9.66 16.34 9.66 13.7 12.3 13.7 12.3 12.74 11.35 11.19 11.35 10.24 12.3 10.24 12.3 5.13 17.42 5.13 17.42 4.17 18.37 4.17 19.92 5.13 20.88 6.08 21.83 7.63 21.83 8.59 20.88 8.59 20.88 10.94 18.52 10.94 18.52 12.95 19.33 13.49 19.39 15.85 18.85 15.85 18.85 11.23 23.52 11.23 23.52 8.82 25.93 4.89 25.93 2.48 23.52 0.08 21.12 0.08 17.18 2.48 14.77 2.48 14.77 7.6 9.66 7.6 9.66 7.67 9.59 7.75 9.5 7.84 9.43 9.63 7.83 12.13 7.44 14.26 8.29Z" /></svg></a>
+                            <a href="#" class="container_item"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="25px" viewBox="0 0 26 25"><path  d="M 25.46 24.17C 25.14 24.49 24.71 24.65 24.29 24.65 23.87 24.65 23.45 24.49 23.13 24.17 23.13 24.17 18.79 19.9 18.79 19.9 16.9 21.35 14.53 22.22 11.96 22.22 5.79 22.22 0.78 17.28 0.78 11.2 0.78 5.13 5.79 0.19 11.96 0.19 18.12 0.19 23.14 5.13 23.14 11.2 23.14 13.57 22.37 15.76 21.07 17.56 21.07 17.56 25.46 21.88 25.46 21.88 26.1 22.51 26.1 23.54 25.46 24.17ZM 11.96 2.78C 7.24 2.78 3.41 6.56 3.41 11.2 3.41 15.85 7.24 19.63 11.96 19.63 14.06 19.63 15.99 18.87 17.48 17.62 17.94 17.24 18.36 16.81 18.72 16.34 19.84 14.91 20.51 13.13 20.51 11.2 20.51 6.56 16.67 2.78 11.96 2.78ZM 16.81 9.58C 16.62 9.67 16.43 9.71 16.23 9.71 15.75 9.71 15.28 9.44 15.05 8.98 14.35 7.56 12.91 6.67 11.3 6.67 10.58 6.67 9.99 6.09 9.99 5.38 9.99 4.66 10.58 4.08 11.3 4.08 13.92 4.08 16.27 5.52 17.42 7.85 17.74 8.49 17.46 9.27 16.81 9.58Z"/></svg></a>
+                            <div class="container_item_triangle"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="10px" viewBox="0 0 30 10"><path  d="M 15-0C 15-0 30.01 10 30.01 10 30.01 10-0.01 10-0.01 10-0.01 10 15-0 15-0Z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="box_text">
+                        <p class="box_text_name">Lorem ipsum dolor.</p>
+                        <div class="box_text_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, officiis.</div>
+                    </div>
+                </div>
+                <div class="gallery_wrapper">
+                    <div class="box_images"><img src="img/photo5.png" style="max-width: 100%" alt="img">
+                        <div class="container">
+                            <a href="#" class="container_item"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="26px" viewBox="0 0 26 26"><path  d="M 23.5 11.24C 23.5 11.24 21.57 13.17 21.57 13.17 21.57 13.17 18.39 16.36 18.39 16.36 18.23 16.53 18.05 16.68 17.87 16.82 16.1 18.22 13.75 18.52 11.72 17.72 10.97 17.43 10.26 16.97 9.64 16.36 9.64 16.36 12.28 13.71 12.28 13.71 13.24 14.67 14.79 14.67 15.74 13.71 15.74 13.71 17.77 11.69 17.77 11.69 17.77 11.69 20.86 8.6 20.86 8.6 21.81 7.64 21.81 6.09 20.86 5.14 19.9 4.18 18.35 4.18 17.4 5.14 17.4 5.14 14.94 7.59 14.94 7.59 13.41 6.88 11.65 6.76 10.03 7.22 10.03 7.22 14.76 2.49 14.76 2.49 17.16 0.09 21.1 0.09 23.5 2.49 25.92 4.91 25.92 8.84 23.5 11.24ZM 14.26 8.29C 15.01 8.58 15.73 9.04 16.34 9.66 16.34 9.66 13.7 12.3 13.7 12.3 12.74 11.35 11.19 11.35 10.24 12.3 10.24 12.3 5.13 17.42 5.13 17.42 4.17 18.37 4.17 19.92 5.13 20.88 6.08 21.83 7.63 21.83 8.59 20.88 8.59 20.88 10.94 18.52 10.94 18.52 12.95 19.33 13.49 19.39 15.85 18.85 15.85 18.85 11.23 23.52 11.23 23.52 8.82 25.93 4.89 25.93 2.48 23.52 0.08 21.12 0.08 17.18 2.48 14.77 2.48 14.77 7.6 9.66 7.6 9.66 7.67 9.59 7.75 9.5 7.84 9.43 9.63 7.83 12.13 7.44 14.26 8.29Z" /></svg></a>
+                            <a href="#" class="container_item"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="25px" viewBox="0 0 26 25"><path  d="M 25.46 24.17C 25.14 24.49 24.71 24.65 24.29 24.65 23.87 24.65 23.45 24.49 23.13 24.17 23.13 24.17 18.79 19.9 18.79 19.9 16.9 21.35 14.53 22.22 11.96 22.22 5.79 22.22 0.78 17.28 0.78 11.2 0.78 5.13 5.79 0.19 11.96 0.19 18.12 0.19 23.14 5.13 23.14 11.2 23.14 13.57 22.37 15.76 21.07 17.56 21.07 17.56 25.46 21.88 25.46 21.88 26.1 22.51 26.1 23.54 25.46 24.17ZM 11.96 2.78C 7.24 2.78 3.41 6.56 3.41 11.2 3.41 15.85 7.24 19.63 11.96 19.63 14.06 19.63 15.99 18.87 17.48 17.62 17.94 17.24 18.36 16.81 18.72 16.34 19.84 14.91 20.51 13.13 20.51 11.2 20.51 6.56 16.67 2.78 11.96 2.78ZM 16.81 9.58C 16.62 9.67 16.43 9.71 16.23 9.71 15.75 9.71 15.28 9.44 15.05 8.98 14.35 7.56 12.91 6.67 11.3 6.67 10.58 6.67 9.99 6.09 9.99 5.38 9.99 4.66 10.58 4.08 11.3 4.08 13.92 4.08 16.27 5.52 17.42 7.85 17.74 8.49 17.46 9.27 16.81 9.58Z"/></svg></a>
+                            <div class="container_item_triangle"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="10px" viewBox="0 0 30 10"><path  d="M 15-0C 15-0 30.01 10 30.01 10 30.01 10-0.01 10-0.01 10-0.01 10 15-0 15-0Z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="box_text">
+                        <p class="box_text_name">Lorem ipsum dolor sit.</p>
+                        <div class="box_text_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                    </div>
+                </div>
+                <div class="gallery_wrapper">
+                <div class="box_images"><img src="img/photo6.png" style="max-width: 100%" alt="img">
+                    <div class="container">
+                        <a href="#" class="container_item"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="26px" viewBox="0 0 26 26"><path  d="M 23.5 11.24C 23.5 11.24 21.57 13.17 21.57 13.17 21.57 13.17 18.39 16.36 18.39 16.36 18.23 16.53 18.05 16.68 17.87 16.82 16.1 18.22 13.75 18.52 11.72 17.72 10.97 17.43 10.26 16.97 9.64 16.36 9.64 16.36 12.28 13.71 12.28 13.71 13.24 14.67 14.79 14.67 15.74 13.71 15.74 13.71 17.77 11.69 17.77 11.69 17.77 11.69 20.86 8.6 20.86 8.6 21.81 7.64 21.81 6.09 20.86 5.14 19.9 4.18 18.35 4.18 17.4 5.14 17.4 5.14 14.94 7.59 14.94 7.59 13.41 6.88 11.65 6.76 10.03 7.22 10.03 7.22 14.76 2.49 14.76 2.49 17.16 0.09 21.1 0.09 23.5 2.49 25.92 4.91 25.92 8.84 23.5 11.24ZM 14.26 8.29C 15.01 8.58 15.73 9.04 16.34 9.66 16.34 9.66 13.7 12.3 13.7 12.3 12.74 11.35 11.19 11.35 10.24 12.3 10.24 12.3 5.13 17.42 5.13 17.42 4.17 18.37 4.17 19.92 5.13 20.88 6.08 21.83 7.63 21.83 8.59 20.88 8.59 20.88 10.94 18.52 10.94 18.52 12.95 19.33 13.49 19.39 15.85 18.85 15.85 18.85 11.23 23.52 11.23 23.52 8.82 25.93 4.89 25.93 2.48 23.52 0.08 21.12 0.08 17.18 2.48 14.77 2.48 14.77 7.6 9.66 7.6 9.66 7.67 9.59 7.75 9.5 7.84 9.43 9.63 7.83 12.13 7.44 14.26 8.29Z" /></svg></a>
+                        <a href="#" class="container_item"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="25px" viewBox="0 0 26 25"><path  d="M 25.46 24.17C 25.14 24.49 24.71 24.65 24.29 24.65 23.87 24.65 23.45 24.49 23.13 24.17 23.13 24.17 18.79 19.9 18.79 19.9 16.9 21.35 14.53 22.22 11.96 22.22 5.79 22.22 0.78 17.28 0.78 11.2 0.78 5.13 5.79 0.19 11.96 0.19 18.12 0.19 23.14 5.13 23.14 11.2 23.14 13.57 22.37 15.76 21.07 17.56 21.07 17.56 25.46 21.88 25.46 21.88 26.1 22.51 26.1 23.54 25.46 24.17ZM 11.96 2.78C 7.24 2.78 3.41 6.56 3.41 11.2 3.41 15.85 7.24 19.63 11.96 19.63 14.06 19.63 15.99 18.87 17.48 17.62 17.94 17.24 18.36 16.81 18.72 16.34 19.84 14.91 20.51 13.13 20.51 11.2 20.51 6.56 16.67 2.78 11.96 2.78ZM 16.81 9.58C 16.62 9.67 16.43 9.71 16.23 9.71 15.75 9.71 15.28 9.44 15.05 8.98 14.35 7.56 12.91 6.67 11.3 6.67 10.58 6.67 9.99 6.09 9.99 5.38 9.99 4.66 10.58 4.08 11.3 4.08 13.92 4.08 16.27 5.52 17.42 7.85 17.74 8.49 17.46 9.27 16.81 9.58Z"/></svg></a>
+                        <div class="container_item_triangle"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="10px" viewBox="0 0 30 10"><path  d="M 15-0C 15-0 30.01 10 30.01 10 30.01 10-0.01 10-0.01 10-0.01 10 15-0 15-0Z"/></svg></div>
+                    </div>
+                </div>
+                <div class="box_text">
+                    <p class="box_text_name">Lorem ipsum dolor sit amet.</p>
+                    <div class="box_text_main">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+                </div>
+			</div>
+            </div>
+            <button class="gallery_button button_style">LOAD MORE</button>
+		</div>
+	</section>
+	<section class="video_item" id="video_item">
+		<video autoplay loop controls="controls" class="video_control">
+			<source src="video/Mexican_Bird.mp4">
+			<source src="video/Mexican_Bird.ogv">
+			<source src="video/Mexican_Bird.webm">
+		</video>
+		<div class="video_text">
+			<p class="video_text_name">Waxom Video Presentation</p>
+			<p class="video_text_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores blanditiis dolores error ipsam nulla quae reiciendis similique soluta totam vel.</p>
+		</div>
+    </section>
+	<section class="about" id="about">
+		<div class="wrap">
+			<div class="about_block">
+				<img class="about_block_images" src="img/iPhone%20in%20hand.png">
+				<div class="about_content_block">
+					<div class="about_content_block_name">Excellent for Mobile Devices.</div>
+					<div class="about_content_block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugit molestias quasi quibusdam ratione. Amet asperiores atque error et expedita, explicabo fugiat ipsa ipsum iste modi nisi, nostrum numquam odio optio quisquam, ratione reiciendis sit sunt totam vero! Architecto atque est ex excepturi molestiae officia provident, quas qui ratione sint.</div>
+					<div class="information_wrapper">
+						<img class="about_content_block_text_information_icon" src="img/01.png" alt="img">
+						<p class="about_content_block_text_information">Nam liber tempor cum soluta nobis eleifend option;</p>
+					</div>
+					<div class="information_wrapper">
+						<img class="about_content_block_text_information_icon" src="img/01.png" alt="img">
+						<p class="about_content_block_text_information">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div class="information_wrapper">
+						<img class="about_content_block_text_information_icon" src="img/01.png" alt="img">
+						<p class="about_content_block_text_information">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, itaque?</p>
+					</div>
+					<div class="information_wrapper">
+						<img class="about_content_block_text_information_icon" src="img/01.png" alt="img">
+						<p class="about_content_block_text_information">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deserunt ducimus nam?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about_information">
+		<div class="wrap">
+			<div class="about_information_container">
+				<div class="about_information_block">
+					<img class="about_information_block_icon" src="img/icon_acount.png" alt="img">
+					<div class="about_information_block_number">3587</div>
+					<div class="about_information_block_text">Satisfied Clients</div>
+					<div class="about_information_block_line"></div>
+				</div>
+				<div class="about_information_block">
+					<img class="about_information_block_icon" src="img/icon_cap.png" alt="img">
+					<div class="about_information_block_number">207</div>
+					<div class="about_information_block_text">Cups of coffee</div>
+					<div class="about_information_block_line"></div>
+				</div>
+				<div class="about_information_block">
+					<img class="about_information_block_icon" src="img/icon_massen.png" alt="img">
+					<div class="about_information_block_number">2500</div>
+					<div class="about_information_block_text">Blog posts</div>
+					<div class="about_information_block_line"></div>
+				</div>
+				<div class="about_information_block">
+					<img class="about_information_block_icon" src="img/icon_like.png" alt="img">
+					<div class="about_information_block_number">873</div>
+					<div class="about_information_block_text">Likes</div>
+					<div class="about_information_block_line"></div>
+				</div>
+				<div class="about_information_block">
+					<img class="about_information_block_icon" src="img/icon_blow.png" alt="img">
+					<div class="about_information_block_number">900</div>
+					<div class="about_information_block_text">We launched</div>
+					<div class="about_information_block_line"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="post" id="post">
+        <div class="wrap">
+            <div class="post_wrapper">
+                <div class="post_block">
+                    <div class="post_block_name">Our Latest Project.</div>
+                    <div class="post_block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, cum eaque impedit inventore libero molestias perferendis possimus quae sunt velit.</div>
+                </div>
+                <div class="post_gallery owl-carousel owl-theme">
+                    <div class="post_gallery_wrapper">
+                        <div class="post_images"><img src="img/photo_legs.png" alt="img">
+                            <div class="post_container">
+                                <div class="post_container_data">30</div>
+                                <div class="post_container_month">Sep.</div>
+                            </div>
+                        </div>
+                        <div class="post_text">
+                            <p class="post_text_name">Lorem ipsum dolor sit amet.</p>
+                            <p class="post_text_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti harum quasi totam veniam.</p>
+                            <a href="#" class="post_read_more">
+                                <p class="post_read_more_text">Read More</p>
+                                <img src="img/arrow_more.png" alt="img" class="post_read_more_icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="post_gallery_wrapper">
+                        <div class="post_images"><img src="img/photo_mac.png" style="max-width: 100%" alt="img">
+                            <div class="post_container">
+                                <div class="post_container_data">30</div>
+                                <div class="post_container_month">Sep.</div>
+                            </div>
+                        </div>
+                        <div class="post_text">
+                            <p class="post_text_name">Lorem ipsum dolor sit amet.</p>
+                            <p class="post_text_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti harum quasi totam veniam.</p>
+                            <a href="#" class="post_read_more">
+                                <p class="post_read_more_text">Read More</p>
+                                <img src="img/arrow_more.png" alt="img" class="post_read_more_icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="post_gallery_wrapper">
+                        <div class="post_images"><img src="img/photo_ship.png" style="max-width:100%"  alt="img">
+                            <div class="post_container">
+                                <div class="post_container_data">30</div>
+                                <div class="post_container_month">Sep.</div>
+                            </div>
+                        </div>
+                        <div class="post_text">
+                            <p class="post_text_name">Lorem ipsum dolor sit amet.</p>
+                            <p class="post_text_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti harum quasi totam veniam.</p>
+                            <a href="#" class="post_read_more">
+                                <p class="post_read_more_text">Read More</p>
+                                <img src="img/arrow_more.png" alt="img" class="post_read_more_icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="post_gallery_wrapper">
+                        <div class="post_images"><img src="img/photo_ship.png" style="max-width: 100%" alt="img">
+                            <div class="post_container">
+                                <div class="post_container_data">30</div>
+                                <div class="post_container_month">Sep.</div>
+                            </div>
+                        </div>
+                        <div class="post_text">
+                            <p class="post_text_name">Lorem ipsum dolor sit amet.</p>
+                            <p class="post_text_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti harum quasi totam veniam.</p>
+                            <a href="#" class="post_read_more">
+                                <p class="post_read_more_text">Read More</p>
+                                <img src="img/arrow_more.png" alt="img" class="post_read_more_icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="post_gallery_wrapper">
+                        <div class="post_images"><img src="img/photo_ship.png" style="max-width: 100%" alt="img">
+                            <div class="post_container">
+                                <div class="post_container_data">30</div>
+                                <div class="post_container_month">Sep.</div>
+                            </div>
+                        </div>
+                        <div class="post_text">
+                            <p class="post_text_name">Lorem ipsum dolor sit amet.</p>
+                            <p class="post_text_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti harum quasi totam veniam.</p>
+                            <a href="#" class="post_read_more">
+                                <p class="post_read_more_text">Read More</p>
+                                <img src="img/arrow_more.png" alt="img" class="post_read_more_icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="post_gallery_wrapper">
+                        <div class="post_images"><img src="img/photo_ship.png" style="max-width: 100%" alt="img">
+                            <div class="post_container">
+                                <div class="post_container_data">30</div>
+                                <div class="post_container_month">Sep.</div>
+                            </div>
+                        </div>
+                        <div class="post_text">
+                            <p class="post_text_name">Lorem ipsum dolor sit amet.</p>
+                            <p class="post_text_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti harum quasi totam veniam.</p>
+                            <a href="#" class="post_read_more">
+                                <p class="post_read_more_text">Read More</p>
+                                <img src="img/arrow_more.png" alt="img" class="post_read_more_icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="post_gallery_wrapper">
+                        <div class="post_images"><img src="img/photo_ship.png" style="max-width: 100%" alt="img">
+                            <div class="post_container">
+                                <div class="post_container_data">30</div>
+                                <div class="post_container_month">Sep.</div>
+                            </div>
+                        </div>
+                        <div class="post_text">
+                            <p class="post_text_name">Lorem ipsum dolor sit amet.</p>
+                            <p class="post_text_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti harum quasi totam veniam.</p>
+                            <a href="#" class="post_read_more">
+                                <p class="post_read_more_text">Read More</p>
+                                <img src="img/arrow_more.png" alt="img" class="post_read_more_icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section class="partners" id="partners">
+        <div class="wrap">
+            <div class="partners_wrapper">
+                <img src="img/logo-01.png" alt="img" class="partners_images">
+                <img src="img/logo-02.png" alt="img" class="partners_images">
+                <img src="img/logo-03.png" alt="img" class="partners_images">
+                <img src="img/logo-04.png" alt="img" class="partners_images">
+            </div>
+        </div>
+    </section>
+	<section class="footer" id="footer">
+		<div class="wrap">
+			<div class="footer_wrapper">
+
+				<div class="footer_wrapper_item">
+					<div class="block_logo">
+						<img src="img/logos.png" alt="img" class="waxom_ligo">
+						<img src="img/Waxom.png" alt="img" class="waxom_ligo">
+					</div>
+					<p class="waxom_block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur debitis delectus dolore error, ex in ipsum itaque, iure minus, nulla officia quaerat quia ratione reprehenderit ullam voluptate. Aliquid architecto atque doloribus eos magni nesciunt, nulla quam quo vero voluptas?</p>
+					<a href="#" class="waxom_block_more">
+						<p class="waxom_block_more_text">Read More</p>
+						<img src="img/arrow_more.png" alt="img" class="waxom_block_more_icon">
+					</a>
+				</div>
+
+				<div class="footer_wrapper_item">
+					<p class="recent_block_name">Recent posts</p>
+					<div class="recent_wrapper">
+						<p class="recent_block_data">September 08. 2015</p>
+						<p class="recent_block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur dolor.</p>
+					</div>
+					<div class="block_line"></div>
+					<div class="recent_wrapper">
+						<p class="recent_block_data">September 08. 2015</p>
+						<p class="recent_block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur dolor.</p>
+					</div>
+					<div class="block_line"></div>
+					<div class="recent_wrapper">
+						<p class="recent_block_data">September 08. 2015</p>
+						<p class="recent_block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur dolor.</p>
+					</div>
+				</div>
+
+
+				<div class="footer_wrapper_item">
+					<p class="out_block_name">Out Twitter</p>
+					<div class="out_wrapper">
+						<p class="out__text"><a href="#" class="footer_a">@waxom </a>Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
+						<p class="out_time">3 min ago</p>
+					</div>
+					<div class="block_line"></div>
+					<div class="out_wrapper">
+						<p class="out__text">Mirum est <a href="#" class="footer_a"> #envato </a> notare quam littera gothica, quam nunc putamu parum anteposuerit iltteraum</p>
+						<p class="out_time">5 hours ago</p>
+					</div>
+					<div class="block_line"></div>
+					<div class="out_wrapper">
+						<p class="out__text">Soluta nobis option <span class="footer_out"> bit.ly/1Hniso7</span></p>
+						<p class="out_time">20 days ago</p>
+					</div>
+				</div>
+
+				<div class="footer_wrapper_item">
+					<p class="Widget_block_name">Dribbble Widget</p>
+					<div class="Widget_block_item">
+						<img src="img/1.png" alt="img" class="Widget_images">
+						<img src="img/2.png" alt="img" class="Widget_images">
+						<img src="img/3.png" alt="img" class="Widget_images">
+						<img src="img/4.png" alt="img" class="Widget_images">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section class="footer_information">
+		<div class="wrap">
+			<div class="footer_information_wrapper">
+
+				<div class="left_block">
+					<p class="left_info_about">Copyright © 2015 <span> Waxom</span></p>
+					<div class="left_block_line"></div>
+					<a href="#" class="left_policy">Privacy Policy</a>
+					<div class="left_block_line"></div>
+					<a href="#" class="left_faq">FAQ</a>
+					<div class="left_block_line"></div>
+					<a href="#" class="left_support">Support</a>
+				</div>
+
+				<div class="right_block">
+					<p class="info_design">Designed by <span> ThemeFire</span></p>
+					<div class="left_block_line"></div>
+					<p class="info_only">Only on <span> Envato Market</span></p>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+</div>
 
 <!-- HTML - end -->
 
@@ -40,7 +583,9 @@
 	<link rel="stylesheet" href="css/main.min.css">
 	<!-- bower:js -->
 	<!-- endbower -->
+
 	<script src="js/scripts.min.js"></script>
+	<script src="libs/jquery-backToTop.min.js"></script>
 <!-- scripts and styles - end -->
 
 </body>
