@@ -51,16 +51,17 @@ body
   padding-top: 13px
   @media screen and (max-width: 992px)
     display: none
+    flex-direction: column
     position: absolute
     left: 0
-    padding: 60px 0 0
+    padding: 45px 0 0
     text-align: center
     //width: 260px
     width: 100%
     &_item
       background-color: #4c3022
-      //max-width: 260px
       padding: 5px 0
+      width: 100%
     &_item:hover
       background-color: #1c1412
     .toolbar_block_item_link
@@ -197,6 +198,10 @@ body
 
 
 .gallery_items
+  position: relative
+  .gallery_item
+    width: 100%
+    .gallery_item_images
 .slick-prev
   left: 50px
   z-index: 2
@@ -255,6 +260,47 @@ body
   //    position: absolute
   //    left: -2px
   //    top: -2px
+
+@media screen and (max-width: 998px)
+  .gallery_items
+    .gallery_item
+      height: 800px
+  .gallery_center
+    top: 40%
+@media screen and (max-width: 768px)
+  .slick-prev:before, .slick-next:before
+    display: none
+@media screen and (max-width: 480px)
+  .gallery_items
+    .gallery_item
+      height: 500px
+  .gallery_center
+    top: 30%
+    .gallery_center_name
+      font-size: 25px
+    .gallery_center_information
+      margin-bottom: 15px
+
+@media screen and (max-width: 400px)
+  .gallery_items
+    .gallery_item
+      height: 550px
+  .gallery_center
+    top: 30%
+@media screen and (max-width: 360px)
+  .gallery_items
+    .gallery_item
+      height: 550px
+  .gallery_center
+    top: 40%
+@media screen and (max-width: 320px)
+  .gallery_items
+    .gallery_item
+      height: 500px
+  .gallery_center
+    top: 50%
+    .gallery_center_information
+      margin-bottom: 15px
 
 // -------------------- top_gallery --------------------
 .element
@@ -466,7 +512,8 @@ body
   display: flex
   flex-wrap: wrap
   flex-direction: column
-
+.mix
+  display: none
 .gallery_wrapper:hover
   .container
     background-color: #303030
@@ -492,9 +539,8 @@ body
   //max-width: 370px
   position: relative
   max-height: 237px
-//.box_images img
-//  max-width: 370px
-
+.box_images img
+  height: 100%
 @media screen and  (max-width: 560px)
 
   //.box_images img
@@ -594,6 +640,35 @@ body
     font-weight: 300
     line-height: 28px
 
+@media screen and (max-width: 768px)
+  .video_text
+    &_name
+      font-size: 26px
+      line-height: 28px
+      padding-bottom: 26px
+    &_main
+      font-size: 14px
+      line-height: 16px
+
+@media screen and (max-width: 560px)
+  .video_text
+    &_name
+      font-size: 22px
+      line-height: 24px
+      padding-bottom: 22px
+    &_main
+      font-size: 12px
+      line-height: 14px
+
+@media screen and (max-width: 480px)
+  .video_text
+    &_name
+      font-size: 18px
+      line-height: 18px
+      padding-bottom: 8px
+    &_main
+      font-size: 12px
+
 // -------------------- about --------------------
 .about_block
   display: flex
@@ -658,9 +733,16 @@ body
   padding: 0 150px
   flex-wrap: wrap
 .about_information_block
-  padding: 15px 15px
+  padding: 15px 30px
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+  align-items: center
+  min-width: 150px
   &_icon
     padding-bottom: 30px
+    min-width: 44px
+    min-height: 30px
   &_number
     color: white
     font-family: Montserrat
@@ -681,6 +763,19 @@ body
     height: 2px
     background-color: white
     margin: 0 auto
+
+@media screen and (max-width: 768px)
+  .about_information_block
+    &_icon
+      padding-bottom: 20px
+    &_number
+      font-size: 36px
+@media screen and (max-width: 480px)
+  .about_information_block
+    &_icon
+      width: 30px
+    &_number
+      font-size: 30px
 // -------------------- post --------------------
 .post_wrapper
   display: flex

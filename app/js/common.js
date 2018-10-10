@@ -13,6 +13,21 @@ $(function() {
         $('.toolbar_block').slideToggle(500);
     });
 
+    $(".toolbar_block_item_link").click(function () {
+        $(".toolbar_menu_icon").removeClass("on");
+        // $('.toolbar_block').slideToggle(500);
+    });
+
+
+    $(".toolbar_block_item_link").click(function () {
+        $(this).removeClass("on");
+        $('.toolbar_block').slideToggle(500);
+    });
+
+    // $(window).click(function() {
+    //    $(".toolbar_block").removeClass("on");
+    // });
+
     $(window).resize(function() {
         var wid = $(window).width();
         if (wid > 992) {
@@ -56,18 +71,19 @@ $(function() {
         bottom: 20,
         color: '#FFFFFF',
         divFloat: 'right',
-        effect: 'spin',
+        effect: 'zoom',
         enabled: true,
         height: 50,
         width: 50,
         icon: 'fas fa-chevron-up',
         left: 20,
         right: 20,
-        scroll: 1500,
         theme: 'default',
-        zIndex: 999
+        zIndex: 999,
+        speed: 1500
     });
 
-
+    //------------------main------------------
+    $("#container").mixItUp({});
 
 });
