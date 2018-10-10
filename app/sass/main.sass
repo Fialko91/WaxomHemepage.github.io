@@ -8,18 +8,7 @@ body
   //background-color: gray
   margin: 0
   padding: 0
-.wrap
-  margin: 0 auto
-  width: 100%
-  max-width: 1230px
-.button_style
-  background-color: #998675
-  border-radius: 3px
-  box-shadow: inset 0 -3px 0 #736357
-  width: 170px
-  height: 50px
-  border: none
-  outline: none
+
 
 // -------------------- top_toolbar --------------------
 .toolbar
@@ -56,7 +45,6 @@ body
     left: 0
     padding: 45px 0 0
     text-align: center
-    //width: 260px
     width: 100%
     &_item
       background-color: #4c3022
@@ -70,22 +58,20 @@ body
   @media screen and (min-width : 992px)
     display: inline-flex !important
 
-    //&.active
-    //  display: flex
-    //  flex-direction: column
-
   &_item
     &_link
       padding-right: 30px
-      color: white
       font-size: 14px
       font-weight: 300
       font-family: "montserrat"
       cursor: pointer
       text-decoration: none
+      color: #FFFFFF
+      transition: color .25s
     &_link:hover
       color: #c7b29a
       text-decoration: none
+      transition: color .25s
 
 .toolbar_icon
   display: flex
@@ -481,6 +467,7 @@ body
   font-weight: 300
   line-height: 28px
   padding-bottom: 40px
+
 .button_wrapper
   padding-bottom: 40px
 .button_item
@@ -495,9 +482,11 @@ body
   border-radius: 3px
   margin: 0 5px
   outline: none
+  transition: all .25s
 .button_item:hover
   background-color: #998675
   color: white
+  transition: all .25s
 
 
 .gallery_wrapper_block
@@ -1025,6 +1014,10 @@ body
     font-weight: 400
     line-height: 20px
     padding-right: 10px
+    transition: color .25s
+  &_text:hover
+    color: #c7b299
+    transition: color .25s
 
 .recent_block_name
   color: white
@@ -1032,11 +1025,18 @@ body
   font-size: 24px
   font-weight: 700
   padding-bottom: 30px
+
+.recent_wrapper
+  cursor: pointer
+  .recent_block_data, .recent_block_text
+    transition: all .25s
 .recent_wrapper:hover
   .recent_block_data
     color: white
+    transition: all .25s
   .recent_block_text
     color: #c7b299
+    transition: all .25s
 
 .recent_block_data
   color: #363636
@@ -1076,8 +1076,10 @@ body
   font-weight: 300
   line-height: 20px
 .footer_a
+  transition: color .25s
   color: #00bff3
   text-decoration: none
+
 
 .footer_out
   color: #959595
@@ -1125,24 +1127,30 @@ body
   font-weight: 300
   //line-height: 20px
   color: #555
+  transition: color .25s
 .left_policy:hover
   color: #c7b299
+  transition: color .25s
 .left_faq
   font-family: Montserrat
   font-size: 13px
   font-weight: 300
   //line-height: 20px
   color: #555
+  transition: color .25s
 .left_faq:hover
   color: #c7b299
+  transition: color .25s
 .left_support
   font-family: Montserrat
   font-size: 13px
   font-weight: 300
   //line-height: 20px
   color: #555
+  transition: color .25s
 .left_support:hover
   color: #c7b299
+  transition: color .25s
 
 .right_block
   display: flex
@@ -1167,5 +1175,23 @@ body
   color: #555
 .info_only span
   color: #959595
+//---------------------page_404--------------------------
+.wrapper_404
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  align-content: center
+  padding: 0 10px
+.wrap_404
+  display: flex
+  flex-direction: column
+  align-items: center
+  .img_404
+    width: 100%
+    padding-bottom: 30px
+
+
 //-------------------------------------------------------
 @import "media" // Всегда в конце
