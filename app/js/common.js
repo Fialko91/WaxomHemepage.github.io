@@ -86,4 +86,19 @@ $(function() {
     //------------------main------------------
     $("#container").mixItUp({});
 
+    //------------------popup------------------
+    $(function () {
+        $('.popup-modal').magnificPopup({
+            type: 'inline',
+            preloader: false,
+            focus: '#username',
+            modal: false,
+            // closeOnContentClick: false
+        });
+        $(document).on('click', '.popup-modal-dismiss', function (e) {
+            e.preventDefault();
+            $.magnificPopup.close();
+        });
+    });
+
 });

@@ -1193,5 +1193,58 @@ body
     padding-bottom: 30px
 
 
+//-----------------------------popup--------------------------
+.wrapper_popup
+  //display: flex
+  //flex-direction: column
+  //justify-content: center
+  //align-items: center
+  //width: 100%
+  position: absolute
+  left: 50%
+  top: 0
+  transform: translate(-50%, -50%)
+  width: 460px
+
+
+
+
+  .popup_form
+    width: 100%
+    max-width: 460px
+    display: flex
+    flex-direction: column
+    align-items: center
+    //justify-content: center
+    background-color: #FFFFFF
+    padding: 30px
+    position: relative
+    border-radius: 3px
+    &_name, &_mail, &_text
+      margin-bottom: 15px
+      width: 100%
+      text-transform: capitalize
+      text-indent: 20px
+    &_text
+      height: 200px
+      resize: none
+  .mfp-close
+    width: 30px
+    height: 30px
+
+  .popup_btn
+    //position: absolute
+    //background: url("/img/close.png") no-repeat center
+    //background-size: cover
+  //  width: 20px
+  //  height: 20px
+  //  cursor: pointer
+  //  right: 5px
+  //  top: 5px
+  //  transition: all .25s
+  //.popup_btn:hover
+  //  transform: scale(1.1)
+  //  transition: all .25s
+
 //-------------------------------------------------------
 @import "media" // Всегда в конце

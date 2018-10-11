@@ -31,6 +31,7 @@ gulp.task('scripts', function() {
 		'app/libs/slick/slick.min.js',
 		'app/libs/OwlCarousel/owl.carousel.min.js',
 		'app/libs/jquery.mixitup.js',
+		'app/libs/jquery-magnific-popup/jquery.magnific-popup.min.js',
 		// 'app/libs/jquery-backToTop.min.js',
 		'app/js/common.js', // Всегда в конце
 		])
