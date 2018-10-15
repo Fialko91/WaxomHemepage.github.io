@@ -18,7 +18,10 @@ body
 .toolbar_wrapper
   display: flex
   justify-content: space-between
-  margin: 40px 30px 0 30px
+  //margin: 30px 30px 0 30px
+  margin: 0 30px 0 30px
+  padding-top: 20px
+  //top: 10px
   position: relative
 .logo
   display: flex
@@ -180,7 +183,7 @@ body
     line-height: 24px
     margin-bottom: 50px
 .gallery_button
-  margin: 0 auto
+  margin: 0 auto !important
 
 
 .gallery_items
@@ -233,21 +236,6 @@ body
   top: -2px
   left: -2px
 
-  //& li
-  //  width: 11px
-  //  height: 11px
-  //  background-color: white
-  //  opacity: 0.5
-  //  border-radius: 50px
-  //  margin: 0 10px
-  //  & button
-  //    width: 15px
-  //    height: 15px
-  //    border: 2px solid #d3c1ad
-  //    border-radius: 50px
-  //    position: absolute
-  //    left: -2px
-  //    top: -2px
 
 @media screen and (max-width: 998px)
   .gallery_items
@@ -341,7 +329,9 @@ body
       margin: 0 auto 80px
       transition: all .5s
 
-
+@media screen and (max-width: 980px)
+  .element
+    padding: 40px 30px
 
 // -------------------- images --------------------
 .images_wrapper
@@ -433,20 +423,21 @@ body
   line-height: 23px
   text-transform: uppercase
 
-@media screen and (max-width: 706px )
-  .button_gallery_button
-    margin: 25px auto 0
 
+@media screen and (max-width: 723px )
+  .button_gallery_name
+    font-size: 22px
+  .button_gallery_text
+    font-size: 14px
 @media screen and (max-width: 706px )
+  //.button_gallery_button
+  //  margin: auto
   .button_gallery_block
     margin: 0 auto
     text-align: center
-@media screen and (max-width: 706px )
-  .button_gallery_name
-    font-size: 22px
-@media screen and (max-width: 706px )
-  .button_gallery_text
-    font-size: 14px
+@media screen and (max-width: 625px )
+  .popup_modal_wrap
+    margin: 25px auto 0
 // -------------------- main --------------------
 .main_wrapper
   display: flex
@@ -578,7 +569,7 @@ body
     line-height: 20px
     transition: all 0.5s
 
-.gallery_button
+.gallery_button_main
   display: flex
   justify-content: center
   margin: 0 auto 80px
@@ -1197,20 +1188,12 @@ body
 
 //-----------------------------popup--------------------------
 .wrapper_popup
-  //display: flex
-  //flex-direction: column
-  //justify-content: center
-  //align-items: center
-  //width: 100%
   position: absolute
   left: 50%
   top: 0
   transform: translate(-50%, -50%)
   max-width: 460px
   width: 100%
-
-
-
 
 
   .popup_form
@@ -1235,11 +1218,13 @@ body
   .mfp-close
     width: 30px
     height: 30px
+  //.mfp-wrap
+  //  position: absolute
 
-  .popup_btn
-    //position: absolute
-    //background: url("/img/close.png") no-repeat center
-    //background-size: cover
+  //.popup_btn
+  //  position: absolute
+  //  background: url("/img/close.png") no-repeat center
+  //  background-size: cover
   //  width: 20px
   //  height: 20px
   //  cursor: pointer
@@ -1250,5 +1235,16 @@ body
   //  transform: scale(1.1)
   //  transition: all .25s
 
+//---------------------button----------------------------
+.scrollup
+  width: 40px
+  height: 40px
+  opacity: 0.3
+  position: fixed
+  bottom: 50px
+  right: 20px
+  display: none
+  text-indent: -9999px
+  background: url('../img/icon_top.png') no-repeat
 //-------------------------------------------------------
 @import "media" // Всегда в конце

@@ -66,21 +66,38 @@ $(function() {
     });
 
     //--------------------button UP--------------
-    var $button = $.backToTop({
-        backgroundColor: '#5D5D5D',
-        bottom: 20,
-        color: '#FFFFFF',
-        divFloat: 'right',
-        effect: 'zoom',
-        enabled: true,
-        height: 50,
-        width: 50,
-        icon: 'fas fa-chevron-up',
-        left: 20,
-        right: 20,
-        theme: 'default',
-        zIndex: 999,
-        speed: 1500
+    // var $button = $.backToTop({
+    //     backgroundColor: '#5D5D5D',
+    //     bottom: 20,
+    //     color: '#FFFFFF',
+    //     divFloat: 'right',
+    //     effect: 'zoom',
+    //     enabled: true,
+    //     height: 50,
+    //     width: 50,
+    //     icon: 'fas fa-chevron-up',
+    //     left: 20,
+    //     right: 20,
+    //     theme: 'default',
+    //     zIndex: 999,
+    //     speed: 1500
+    // });
+
+    $(document).ready(function(){
+
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        });
+
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+
     });
 
     //------------------main------------------
