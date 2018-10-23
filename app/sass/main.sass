@@ -84,9 +84,52 @@ body
   right: 0
   padding-top: 13px
 
-  &_search
-    padding-left: 28px
+  //&_search
+  //  padding-left: 28px
 
+.form_search
+  width: 25px
+  height: 25px
+  display: flex
+  align-content: center
+  justify-content: center
+  align-items: center
+  overflow: hidden
+
+input[type=search]
+  -webkit-appearance: textfield
+  -webkit-box-sizing: content-box
+  font-size: 100%
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button
+  display: none
+
+input[type=search]
+  background: url("/img/icon-search.png") no-repeat
+  background-size: cover
+  width: 24px
+  height: 24px
+  //border: solid 1px #CCCCCC
+  //border-radius: 5px
+  transition: all .5s
+  border: none
+  cursor: pointer
+  &::placeholder
+    color: transparent
+
+input[type=search]:focus
+  //margin-top: 60px
+  position: absolute
+  right: 0
+  height: 26px
+  width: 150px
+  border-color: #6dcff6
+  background-color: #FFFFFF
+  outline: none
+  border-radius: 5px
+  text-indent: 10px
+  &::placeholder
+    color: #CCCCCC
 
 .toolbar_menu_icon
   display: none
@@ -142,6 +185,8 @@ body
 
 // -------------------- header_gallery --------------------
 .header_gallery_wrapper
+  position: relative
+  height: 100%
 
 .gallery_center
   padding: 30px
@@ -151,13 +196,11 @@ body
   text-align: center
   display: flex
   flex-direction: column
-  //margin: 50px  auto
   width: 100%
-  //height: 100%
   left: 50%
-  top: 53%
+  top: 50%
   transform: translate(-50%, -50%)
-  z-index: 2
+  z-index: 999
   &_text
     //width: 456px
     color: white
@@ -182,9 +225,12 @@ body
     font-weight: 300
     line-height: 24px
     margin-bottom: 50px
-.gallery_button
-  margin: 0 auto !important
-
+  .popup_modal_gallery_wrap
+    //position: absolute
+    //bottom: 0
+    //left: 50%
+    //transform: translate(-50%, 0)
+    margin: 0 auto
 
 .gallery_items
   position: relative
@@ -257,18 +303,24 @@ body
     .gallery_center_information
       margin-bottom: 15px
 
-@media screen and (max-width: 400px)
+@media screen and (max-width: 480px)
   .gallery_items
     .gallery_item
       height: 550px
   .gallery_center
-    top: 30%
-@media screen and (max-width: 360px)
-  .gallery_items
-    .gallery_item
-      height: 550px
-  .gallery_center
-    top: 40%
+    top: 50%
+//@media screen and (max-width: 400px)
+//  .gallery_items
+//    .gallery_item
+//      height: 550px
+//  .gallery_center
+//    top: 30%
+//@media screen and (max-width: 360px)
+//  .gallery_items
+//    .gallery_item
+//      height: 550px
+//  .gallery_center
+//    top: 40%
 @media screen and (max-width: 320px)
   .gallery_items
     .gallery_item
@@ -277,6 +329,11 @@ body
     top: 50%
     .gallery_center_information
       margin-bottom: 15px
+
+
+
+
+
 
 // -------------------- top_gallery --------------------
 .element
@@ -720,7 +777,10 @@ body
   display: flex
   flex-direction: column
   align-items: center
-  min-width: 150px
+  justify-content: space-between
+  width: 150px
+  //min-width: 150px
+  flex-wrap: wrap
   &_icon
     padding-bottom: 30px
     min-width: 44px
@@ -746,18 +806,35 @@ body
     background-color: white
     margin: 0 auto
 
-@media screen and (max-width: 768px)
+//@media screen and (max-width: 768px)
+//  .about_information_block
+//    &_icon
+//      padding-bottom: 20px
+//    &_number
+//      font-size: 36px
+//@media screen and (max-width: 650px)
+//  .about_information_block
+//    &_icon
+//      width: 30px
+//    &_number
+//      font-size: 30px
+@media screen and (max-width: 617px)
+  .about_information_container
+    padding: 0
   .about_information_block
-    &_icon
-      padding-bottom: 20px
-    &_number
-      font-size: 36px
-@media screen and (max-width: 480px)
-  .about_information_block
+    margin: 0
     &_icon
       width: 30px
     &_number
       font-size: 30px
+//@media screen and (max-width: 480px)
+//  .about_information_block
+//    &_icon
+//      width: 30px
+//    &_number
+//      font-size: 30px
+
+
 // -------------------- post --------------------
 .post_wrapper
   display: flex
@@ -792,9 +869,6 @@ body
     margin: 0 auto 20px
     //padding-bottom: 20px
     transition: all .5s
-//@media screen and (max-width: 560px)
-//  .post_gallery_wrapper
-//    width: 260px
 .post_gallery_wrapper:hover
   background-color: #362f2d
   transition: all .5s
@@ -925,7 +999,7 @@ body
     font-size: 14px
 @media screen and (max-width: 560px)
   .post_gallery_wrapper
-    padding-bottom: 30px
+    //padding-bottom: 30px
     transition: all .5s
 
 
@@ -1188,52 +1262,70 @@ body
 
 //-----------------------------popup--------------------------
 .wrapper_popup
-  position: absolute
+  //position: absolute
+  //left: 50%
+  //top: 50%
+  //transform: translate(-50%, -50%)
+  //position: relative
+  //max-width: 460px
+  //width: 100%
+  //display: flex
+  //align-content: center
+  //align-items: center
+  //justify-content: center
+  //margin: 0 auto
+  //height: 100%
+  //z-index: 999
+
+  position: fixed
+  top: 50%
   left: 50%
-  top: 0
   transform: translate(-50%, -50%)
   max-width: 460px
   width: 100%
-
+  padding: 10px
 
   .popup_form
     width: 100%
-    max-width: 460px
-    display: flex
-    flex-direction: column
-    align-items: center
-    //justify-content: center
+    max-width: 450px
+    //display: flex
+    //flex-direction: column
+    //align-items: center
+    text-align: center
     background-color: #FFFFFF
-    padding: 30px
-    position: relative
-    border-radius: 3px
+    padding: 22px
+    //position: relative
+    border-radius: 5px
+    //z-index: 999
     &_name, &_mail, &_text
       margin-bottom: 14px
       width: 100%
       text-transform: capitalize
       text-indent: 20px
+      z-index: 999
     &_text
       height: 200px
       resize: none
-  .mfp-close
-    width: 30px
-    height: 30px
-  //.mfp-wrap
-  //  position: absolute
+    &_btn
+      width: 150px
+      margin: 0 auto
 
-  //.popup_btn
-  //  position: absolute
-  //  background: url("/img/close.png") no-repeat center
-  //  background-size: cover
-  //  width: 20px
-  //  height: 20px
-  //  cursor: pointer
-  //  right: 5px
-  //  top: 5px
-  //  transition: all .25s
-  //.popup_btn:hover
-  //  transform: scale(1.1)
-  //  transition: all .25s
+button.mfp-arrow, button.mfp-close
+  display: none
+
+.popup_btn
+  position: absolute
+  background: url("/img/close.png") no-repeat center
+  background-size: cover
+  width: 15px
+  height: 15px
+  cursor: pointer
+  right: 14px
+  top: 14px
+  transition: all .25s
+.popup_btn:hover
+  transform: scale(1.1)
+  transition: all .25s
 
 //---------------------button----------------------------
 .scrollup

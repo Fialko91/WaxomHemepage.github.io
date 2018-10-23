@@ -57,7 +57,10 @@
 				</ul>
 				<div class="toolbar_icon">
 					<!--<a href="#"><img class="toolbar_icon_cart" src="img/icon-cart.png" alt="img_cart"></a>-->
-					<a href="#"><img class="toolbar_icon_search" src="img/icon-search.png" alt="img_search"></a>
+					<!--<a href="#"><img class="toolbar_icon_search" src="img/icon-search.png" alt="img_search"></a>-->
+					<form class="form_search">
+						<input type="search" placeholder="search">
+					</form>
 				</div>
 				<div class="toolbar_menu_icon">
                     <span></span>
@@ -68,11 +71,13 @@
 
 	<section class="header_gallery">
 		<div class="header_gallery_wrapper">
+
+
 			<div class="gallery_center">
 				<p class="gallery_center_text">Unique and Modern Design</p>
 				<p class="gallery_center_name">Portfolio PSD Template</p>
 				<p class="gallery_center_information">Nam liber tempor soluta nobis eleifend option congue nihil imperdiet doming is quod mazim placerat facer possim assum.</p>
-				<a href="#test-modal" class="popup-modal"><button class="gallery_button button_style">GET STARTED</button></a>
+				<a href="#test-modal" class="popup-modal popup_modal_gallery_wrap"><button class="gallery_button button_style">GET STARTED</button></a>
 			</div>
 			<div class="gallery_items ">
 				<div class="gallery_item"><img src="img/photo.png" alt="images" class="gallery_item_images"></div>
@@ -80,8 +85,9 @@
 				<div class="gallery_item"><img src="img/photo.png" alt="images" class="gallery_item_images"></div>
 				<div class="gallery_item"><img src="img/photo.png" alt="images" class="gallery_item_images"></div>
 			</div>
-			<!--<button type="button" class="slick-prev" >Previous</button>-->
-			<!--<button type="button" class="slick-next">Next</button>-->
+
+
+
 		</div>
 	</section>
 
@@ -576,16 +582,16 @@
 		</div>
 	</section>
 
-	<div id="test-modal" class="mfp-hide white-popup-block wrapper_popup">
-		<!--<div class="wrapper_popup">-->
+	<div id="test-modal" class="mfp-hide white-popup-block">
+		<div class="wrapper_popup">
 			<form class="popup_form">
 				<input type="text" class="popup_form_name" placeholder="name">
 				<input type="email" class="popup_form_mail" placeholder="email">
 				<textarea  cols="20" rows="10" class="popup_form_text" placeholder="enter text"></textarea>
 				<input type="submit" class="popup_form_btn button_style" placeholder="submit">
-				<p><a class="popup-modal-dismiss popup_btn" href="#"></a></p>
+				<p class="popup_form_btn_close"><a class="popup-modal-dismiss popup_btn" href="#"></a></p>
 			</form>
-		<!--</div>-->
+		</div>
 	</div>
 
 	<a href="#" class="scrollup">Наверх</a>

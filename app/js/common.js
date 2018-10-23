@@ -1,13 +1,12 @@
 $(function() {
     //--------top gallery------
     $('.gallery_items').slick({
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2500,
         cssEase: 'linear',
         dots: true
     });
     //--------toolbar_mnu-----------//
-
     $(".toolbar_menu_icon").click(function () {
         $(this).toggleClass("on");
         $('.toolbar_block').slideToggle(500);
