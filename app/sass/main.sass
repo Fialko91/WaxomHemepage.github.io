@@ -18,10 +18,8 @@ body
 .toolbar_wrapper
   display: flex
   justify-content: space-between
-  //margin: 30px 30px 0 30px
   margin: 0 30px 0 30px
   padding-top: 20px
-  //top: 10px
   position: relative
 .logo
   display: flex
@@ -41,32 +39,32 @@ body
   position: absolute
   right: 45px
   padding-top: 13px
-  @media screen and (max-width: 992px)
-    display: none
-    flex-direction: column
-    position: absolute
-    left: 0
-    padding: 45px 0 0
-    text-align: center
-    width: 100%
-    &_item
-      background-color: #4c3022
-      padding: 5px 0
-      width: 100%
-    &_item:hover
-      background-color: #1c1412
-    .toolbar_block_item_link
-      font-size: 20px
-      padding-right: 0
-  @media screen and (min-width : 992px)
-    display: inline-flex !important
+  //@media screen and (max-width: 992px)
+  //  display: none
+  //  flex-direction: column
+  //  position: absolute
+  //  left: 0
+  //  padding: 45px 0 0
+  //  text-align: center
+  //  width: 100%
+  //  &_item
+  //    background-color: #4c3022
+  //    padding: 5px 0
+  //    width: 100%
+  //  &_item:hover
+  //    background-color: #1c1412
+  //  .toolbar_block_item_link
+  //    font-size: 20px
+  //    padding-right: 0
+  //@media screen and (min-width : 992px)
+  //  display: inline-flex !important
 
   &_item
     &_link
       padding-right: 30px
       font-size: 14px
       font-weight: 300
-      font-family: "montserrat"
+      font-family: "Montserrat", sans-serif
       cursor: pointer
       text-decoration: none
       color: #FFFFFF
@@ -83,9 +81,6 @@ body
   position: absolute
   right: 0
   padding-top: 13px
-
-  //&_search
-  //  padding-left: 28px
 
 .form_search
   width: 25px
@@ -131,55 +126,56 @@ input[type=search]:focus
   &::placeholder
     color: #CCCCCC
 
-.toolbar_menu_icon
-  display: none
-  width: 28px
-  height: 30px
-  margin: 15px auto 10px
-  @media screen and (max-width: 992px)
-    display: block
-    position: absolute
-    left: 0
-    padding-top: 13px
-
-.toolbar_menu_icon span:after,
-.toolbar_menu_icon span:before
-  content: ""
-  position: absolute
-  left: 0
-  top: -9px
-
-.toolbar_menu_icon span:after
-  top: 9px
-
-.toolbar_menu_icon span
-  position: relative
-  display: block
-
-.toolbar_menu_icon span,
-.toolbar_menu_icon span:after,
-.toolbar_menu_icon span:before
-  width: 100%
-  height: 3px
-  background-color: #ffffff
-  transition: all 0.3s
-  backface-visibility: hidden
-  border-radius: 2px
-
-
-/* on activation */
-.toolbar_menu_icon.on span
-  background-color: transparent
-
-.toolbar_menu_icon.on span:before
-  transform: rotate(45deg) translate(5px, 5px)
-
-.toolbar_menu_icon.on span:after
-  transform: rotate(-45deg) translate(7px, -8px)
-
-.toolbar_menu_icon.on + .toolbar_block
-  opacity: 1
-  visibility: visible
+//.toolbar_menu_icon
+//  display: none
+//  width: 28px
+//  height: 30px
+//  margin: 15px auto 10px
+//  cursor: pointer
+//  @media screen and (max-width: 992px)
+//    display: block
+//    position: absolute
+//    left: 0
+//    padding-top: 13px
+//
+//.toolbar_menu_icon span:after,
+//.toolbar_menu_icon span:before
+//  content: ""
+//  position: absolute
+//  left: 0
+//  top: -9px
+//
+//.toolbar_menu_icon span:after
+//  top: 9px
+//
+//.toolbar_menu_icon span
+//  position: relative
+//  display: block
+//
+//.toolbar_menu_icon span,
+//.toolbar_menu_icon span:after,
+//.toolbar_menu_icon span:before
+//  width: 100%
+//  height: 3px
+//  background-color: #ffffff
+//  transition: all 0.3s
+//  backface-visibility: hidden
+//  border-radius: 2px
+//
+//
+///* on activation */
+//.toolbar_menu_icon.on span
+//  background-color: transparent
+//
+//.toolbar_menu_icon.on span:before
+//  transform: rotate(45deg) translate(5px, 5px)
+//
+//.toolbar_menu_icon.on span:after
+//  transform: rotate(-45deg) translate(7px, -8px)
+//
+//.toolbar_menu_icon.on + .toolbar_block
+//  opacity: 1
+//  visibility: visible
 
 
 
@@ -200,11 +196,11 @@ input[type=search]:focus
   left: 50%
   top: 50%
   transform: translate(-50%, -50%)
-  z-index: 999
+  z-index: 2
   &_text
     //width: 456px
     color: white
-    font-family: Raleway
+    font-family: "Raleway", sans-serif
     font-size: 36px
     font-weight: 500
     line-height: 39px
@@ -212,15 +208,15 @@ input[type=search]:focus
   &_name
     //width: 589px
     color: white
-    font-family: Raleway
-    font-size: 52px
+    font-family: "Raleway", sans-serif
+    font-size: 48px
     font-weight: 700
     padding-bottom: 30px
     line-height: 56px
   &_information
     //width: 562px
     color: white
-    font-family: Montserrat
+    font-family: "Montserrat", sans-serif
     font-size: 16px
     font-weight: 300
     line-height: 24px
@@ -236,7 +232,12 @@ input[type=search]:focus
   position: relative
   .gallery_item
     width: 100%
-    .gallery_item_images
+    &_images
+      width: 100%
+      max-width: 100%
+      height: 100vh
+      object-fit: cover
+
 .slick-prev
   left: 50px
   z-index: 2
@@ -253,11 +254,9 @@ input[type=search]:focus
 
 .slick-dots
   position: absolute
-  bottom: 40px
-  //background-color: green
+  bottom: 20px
 
 .slick-dots li
-  //background-color: #00bff3
   margin-bottom: 10px
 .slick-dots li button
   position: absolute
@@ -284,18 +283,12 @@ input[type=search]:focus
 
 
 @media screen and (max-width: 998px)
-  .gallery_items
-    .gallery_item
-      height: 800px
   .gallery_center
     top: 40%
 @media screen and (max-width: 768px)
   .slick-prev:before, .slick-next:before
     display: none
 @media screen and (max-width: 480px)
-  .gallery_items
-    .gallery_item
-      height: 500px
   .gallery_center
     top: 30%
     .gallery_center_name
@@ -304,36 +297,13 @@ input[type=search]:focus
       margin-bottom: 15px
 
 @media screen and (max-width: 480px)
-  .gallery_items
-    .gallery_item
-      height: 550px
   .gallery_center
     top: 50%
-//@media screen and (max-width: 400px)
-//  .gallery_items
-//    .gallery_item
-//      height: 550px
-//  .gallery_center
-//    top: 30%
-//@media screen and (max-width: 360px)
-//  .gallery_items
-//    .gallery_item
-//      height: 550px
-//  .gallery_center
-//    top: 40%
 @media screen and (max-width: 320px)
-  .gallery_items
-    .gallery_item
-      height: 500px
   .gallery_center
     top: 50%
     .gallery_center_information
       margin-bottom: 15px
-
-
-
-
-
 
 // -------------------- top_gallery --------------------
 .element
@@ -341,7 +311,7 @@ input[type=search]:focus
   justify-content: space-between
   text-align: center
   align-items: flex-end
-  padding: 80px 30px
+  padding: 65px 30px
   flex-wrap: wrap
   &_block
     margin: 0 auto
@@ -366,7 +336,7 @@ input[type=search]:focus
     &_name
       padding-bottom: 20px
       color: #555555
-      font-family: Raleway
+      font-family: "Raleway", sans-serif
       font-size: 22px
       font-weight: 600
       transition: all .5s
@@ -374,7 +344,7 @@ input[type=search]:focus
     &_text
       padding-bottom: 30px
       color: #8c8c8c
-      font-family: Montserrat
+      font-family: "Montserrat",sans-serif
       font-size: 14px
       font-weight: 300
       line-height: 24px
@@ -398,19 +368,19 @@ input[type=search]:focus
   display: flex
   flex-direction: column
   text-align: center
-  padding-top: 85px
+  padding-top: 65px
   margin: 0 auto
   &_name
     padding-bottom: 30px
     color: #555
-    font-family: Raleway
+    font-family: "Raleway", sans-serif
     font-size: 30px
     font-weight: 600
 
   &_text
     padding-bottom: 40px
     color: #8c8c8c
-    font-family: Montserra
+    font-family: "Montserrat",sans-serif
     font-size: 16px
     font-weight: 300
     line-height: 28px
@@ -429,7 +399,6 @@ input[type=search]:focus
   &_center
     z-index: 3
     padding-top: 1px
-  //position: absolute
   &_right
     z-index: 2
     margin-top: 83px
@@ -461,7 +430,7 @@ input[type=search]:focus
 .button_gallery_block
   padding-right: 20px
 .button_gallery_name
-  font-family: Raleway
+  font-family: "Raleway", sans-serif
   font-size: 28px
   font-weight: 400
   color: #ffffff
@@ -469,12 +438,12 @@ input[type=search]:focus
   color: #c7b299
 .button_gallery_text
   color: #615855
-  font-family: Montserrat
+  font-family: "Montserrat",sans-serif
   font-size: 18px
   font-weight: 300
 .button_gallery_button
   color: white
-  font-family: Raleway
+  font-family: "Raleway", sans-serif
   font-size: 14px
   font-weight: 700
   line-height: 23px
@@ -487,8 +456,6 @@ input[type=search]:focus
   .button_gallery_text
     font-size: 14px
 @media screen and (max-width: 706px )
-  //.button_gallery_button
-  //  margin: auto
   .button_gallery_block
     margin: 0 auto
     text-align: center
@@ -501,18 +468,17 @@ input[type=search]:focus
   flex-direction: column
   margin: 0 auto
   text-align: center
-  //padding-top: 83px
   max-width: 760px
   flex-wrap: wrap
   padding: 83px 30px 0
 .main_name
   color: #555
-  font-family: Raleway
+  font-family: "Raleway", sans-serif
   font-size: 30px
   font-weight: 600
 .main_text
   color: #8c8c8c
-  font-family: Montserrat
+  font-family: "Montserrat",sans-serif
   font-size: 16px
   font-weight: 300
   line-height: 28px
@@ -523,7 +489,7 @@ input[type=search]:focus
 .button_item
   padding: 0 15px
   color: #8c8c8c
-  font-family: Montserrat
+  font-family: "Montserrat",sans-serif
   font-size: 14px
   font-weight: 300
   line-height: 21px
@@ -575,16 +541,11 @@ input[type=search]:focus
       transition: all 0.5s
 
 .box_images
-  //max-width: 370px
   position: relative
   max-height: 237px
 .box_images img
   height: 100%
-@media screen and  (max-width: 560px)
-
-  //.box_images img
-  //  max-width: 260px
-
+  object-fit: cover
 .container
   display: flex
   flex-wrap: wrap
@@ -608,19 +569,18 @@ input[type=search]:focus
       fill: white
       transition: all 0.5s
 .box_text
-  //margin-top: -9px
   padding: 30px 0 27px 30px
   transition: all 0.5s
 
   &_name
     color: #c7b299
-    font-family: Raleway
+    font-family: "Raleway", sans-serif
     font-size: 20px
     font-weight: 500
     transition: all 0.5s
   &_main
     color: #d1d1d1
-    font-family: Montserrat
+    font-family: "Montserrat",sans-serif
     font-size: 14px
     font-weight: 300
     line-height: 20px
@@ -667,14 +627,14 @@ input[type=search]:focus
   transform: translate(-50%, -50%)
   &_name
     color: white
-    font-family: Raleway
+    font-family: "Raleway", sans-serif
     font-size: 30px
     font-weight: 500
     padding-bottom: 30px
     line-height: 30px
   &_main
     color: white
-    font-family: Montserrat
+    font-family: "Montserrat",sans-serif
     font-size: 16px
     font-weight: 300
     line-height: 28px
@@ -723,13 +683,13 @@ input[type=search]:focus
   padding-bottom: 25px
   &_name
     color: #555
-    font-family: Raleway
+    font-family: "Raleway", sans-serif
     font-size: 30px
     font-weight: 600
     padding-bottom: 40px
   &_text
     color: #8c8c8c
-    font-family: Montserrat
+    font-family: "Montserrat",sans-serif
     font-size: 16px
     font-weight: 300
     line-height: 28px
@@ -743,7 +703,7 @@ input[type=search]:focus
   height: 21px
 .about_content_block_text_information
   color: #8c8c8c
-  font-family: Montserrat
+  font-family: "Montserrat",sans-serif
   font-size: 16px
   font-weight: 300
   line-height: 32px
@@ -772,8 +732,8 @@ input[type=search]:focus
   padding: 0 150px
   flex-wrap: wrap
 .about_information_block
-  padding: 15px 30px
-  margin: 0 auto
+  //padding: 15px 30px
+  margin: 15px auto
   display: flex
   flex-direction: column
   align-items: center
@@ -787,14 +747,15 @@ input[type=search]:focus
     min-height: 30px
   &_number
     color: white
-    font-family: Montserrat
+    font-family: "Montserrat",sans-serif
     font-size: 48px
     font-weight: 200
     line-height: 36px
     padding-bottom: 20px
+    opacity: 0
   &_text
     color: #c7b299
-    font-family: Montserrat
+    font-family: "Montserrat",sans-serif
     font-size: 14px
     font-weight: 300
     line-height: 20px
@@ -806,33 +767,14 @@ input[type=search]:focus
     background-color: white
     margin: 0 auto
 
-//@media screen and (max-width: 768px)
-//  .about_information_block
-//    &_icon
-//      padding-bottom: 20px
-//    &_number
-//      font-size: 36px
-//@media screen and (max-width: 650px)
-//  .about_information_block
-//    &_icon
-//      width: 30px
-//    &_number
-//      font-size: 30px
 @media screen and (max-width: 617px)
   .about_information_container
     padding: 0
   .about_information_block
-    margin: 0
     &_icon
       width: 30px
     &_number
       font-size: 30px
-//@media screen and (max-width: 480px)
-//  .about_information_block
-//    &_icon
-//      width: 30px
-//    &_number
-//      font-size: 30px
 
 
 // -------------------- post --------------------
@@ -850,12 +792,12 @@ input[type=search]:focus
   text-align: center
   &_name
     color: #555
-    font-family: Raleway
+    font-family: "Raleway", sans-serif
     font-size: 30px
     font-weight: 600
   &_text
     color: #8c8c8c
-    font-family: Montserrat
+    font-family: "Montserrat",sans-serif
     font-size: 16px
     font-weight: 300
     line-height: 28px
@@ -867,7 +809,6 @@ input[type=search]:focus
   &_wrapper
     max-width: 370px
     margin: 0 auto 20px
-    //padding-bottom: 20px
     transition: all .5s
 .post_gallery_wrapper:hover
   background-color: #362f2d
@@ -921,9 +862,9 @@ input[type=search]:focus
     width: 50px
     height: 35px
     background-color: #363636
-    border-radius: 3px 3px 0px 0px
+    border-radius: 3px 3px 0 0
     color: white
-    font-family: Montserrat
+    font-family: "Montserrat",sans-serif
     font-size: 24px
     font-weight: 300
     line-height: 20px
@@ -936,9 +877,9 @@ input[type=search]:focus
     width: 50px
     height: 25px
     background-color: #252525
-    border-radius: 0px 0px 3px 3px
+    border-radius: 0 0 3px 3px
     color: white
-    font-family: Roboto
+    font-family: "Roboto", sans-serif
     font-size: 12px
     font-weight: 400
     line-height: 20px
@@ -951,18 +892,17 @@ input[type=search]:focus
   padding-left: 30px
   padding-right: 30px
   padding-top: 30px
-  //margin-top: -9px
   transition: all .5s
   &_name
     color: #555
-    font-family: Raleway
+    font-family: "Raleway", sans-serif
     font-size: 20px
     font-weight: 500
     line-height: 20px
     transition: all .5s
   &_main
     color: #8c8c8c
-    font-family: Montserrat
+    font-family: "Montserrat",sans-serif
     font-size: 14px
     font-weight: 300
     line-height: 22px
@@ -973,13 +913,12 @@ input[type=search]:focus
   display: flex
   align-items: center
   padding-top: 10px
-  //padding-bottom: 6px
   text-decoration: none
   padding-bottom: 25px
   transition: all .5s
   &_text
     color: #c7b299
-    font-family: Montserrat
+    font-family: "Montserrat",sans-serif
     font-size: 14px
     font-weight: 300
     line-height: 20px
@@ -999,7 +938,6 @@ input[type=search]:focus
     font-size: 14px
 @media screen and (max-width: 560px)
   .post_gallery_wrapper
-    //padding-bottom: 30px
     transition: all .5s
 
 
@@ -1056,9 +994,6 @@ input[type=search]:focus
   max-width: 270px
   padding-bottom: 20px
   margin: 0 auto
-//@media screen and (max-width: 1219px)
-//  .footer_wrapper_item
-//    margin: 0 auto
 
 .block_logo
   display: flex
@@ -1066,7 +1001,7 @@ input[type=search]:focus
   padding-bottom: 30px
 .waxom_block_text
   color: #555
-  font-family: Montserrat
+  font-family: "Montserrat",sans-serif
   font-size: 14px
   font-weight: 300
   line-height: 24px
@@ -1076,7 +1011,7 @@ input[type=search]:focus
   padding-top: 30px
   &_text
     color: #d1d1d1
-    font-family: Montserrat
+    font-family: "Montserrat",sans-serif
     font-size: 14px
     font-weight: 400
     line-height: 20px
@@ -1088,7 +1023,7 @@ input[type=search]:focus
 
 .recent_block_name
   color: white
-  font-family: Raleway
+  font-family: "Raleway", sans-serif
   font-size: 24px
   font-weight: 700
   padding-bottom: 30px
@@ -1107,13 +1042,13 @@ input[type=search]:focus
 
 .recent_block_data
   color: #363636
-  font-family: Montserrat
+  font-family: "Montserrat",sans-serif
   font-size: 12px
   font-weight: 300
   line-height: 20px
 .recent_block_text
   color: #555
-  font-family: Montserrat
+  font-family: "Montserrat",sans-serif
   font-size: 14px
   font-weight: 300
   line-height: 20px
@@ -1126,19 +1061,19 @@ input[type=search]:focus
 
 .out_block_name
   color: white
-  font-family: Raleway
+  font-family: "Raleway", sans-serif
   font-size: 24px
   font-weight: 700
   padding-bottom: 30px
 .out__text
-  font-family: Montserrat
+  font-family: "Montserrat",sans-serif
   font-size: 14px
   font-weight: 300
   line-height: 20px
   color: #555
 .out_time
   color: #363636
-  font-family: Montserrat
+  font-family: "Montserrat",sans-serif
   font-size: 12px
   font-weight: 300
   line-height: 20px
@@ -1152,7 +1087,7 @@ input[type=search]:focus
   color: #959595
 .Widget_block_name
   color: white
-  font-family: Raleway
+  font-family: "Raleway", sans-serif
   font-size: 24px
   font-weight: 700
   padding-bottom: 30px
@@ -1176,7 +1111,7 @@ input[type=search]:focus
   margin: 0 auto
   padding: 10px 0
 .left_info_about
-  font-family: Montserrat
+  font-family: "Montserrat",sans-serif
   font-size: 13px
   font-weight: 300
   //line-height: 20px
@@ -1189,7 +1124,7 @@ input[type=search]:focus
   height: 14px
   width: 1px
 .left_policy
-  font-family: Montserrat
+  font-family: "Montserrat",sans-serif
   font-size: 13px
   font-weight: 300
   //line-height: 20px
@@ -1199,7 +1134,7 @@ input[type=search]:focus
   color: #c7b299
   transition: color .25s
 .left_faq
-  font-family: Montserrat
+  font-family: "Montserrat",sans-serif
   font-size: 13px
   font-weight: 300
   //line-height: 20px
@@ -1209,7 +1144,7 @@ input[type=search]:focus
   color: #c7b299
   transition: color .25s
 .left_support
-  font-family: Montserrat
+  font-family: "Montserrat",sans-serif
   font-size: 13px
   font-weight: 300
   //line-height: 20px
@@ -1227,7 +1162,7 @@ input[type=search]:focus
   margin: 0 auto
   padding: 10px 0
 .info_design
-  font-family: Montserrat
+  font-family: "Montserrat",sans-serif
   font-size: 13px
   font-weight: 300
   //line-height: 20px
@@ -1235,10 +1170,9 @@ input[type=search]:focus
 .info_design span
   color: #959595
 .info_only
-  font-family: Montserrat
+  font-family: "Montserrat",sans-serif
   font-size: 13px
   font-weight: 300
-  //line-height: 20px
   color: #555
 .info_only span
   color: #959595
@@ -1262,20 +1196,6 @@ input[type=search]:focus
 
 //-----------------------------popup--------------------------
 .wrapper_popup
-  //position: absolute
-  //left: 50%
-  //top: 50%
-  //transform: translate(-50%, -50%)
-  //position: relative
-  //max-width: 460px
-  //width: 100%
-  //display: flex
-  //align-content: center
-  //align-items: center
-  //justify-content: center
-  //margin: 0 auto
-  //height: 100%
-  //z-index: 999
 
   position: fixed
   top: 50%
@@ -1288,15 +1208,10 @@ input[type=search]:focus
   .popup_form
     width: 100%
     max-width: 450px
-    //display: flex
-    //flex-direction: column
-    //align-items: center
     text-align: center
     background-color: #FFFFFF
     padding: 22px
-    //position: relative
     border-radius: 5px
-    //z-index: 999
     &_name, &_mail, &_text
       margin-bottom: 14px
       width: 100%

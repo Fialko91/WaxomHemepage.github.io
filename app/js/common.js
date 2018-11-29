@@ -7,32 +7,32 @@ $(function() {
         dots: true
     });
     //--------toolbar_mnu-----------//
-    $(".toolbar_menu_icon").click(function () {
-        $(this).toggleClass("on");
-        $('.toolbar_block').slideToggle(500);
-    });
-
-    $(".toolbar_block_item_link").click(function () {
-        $(".toolbar_menu_icon").removeClass("on");
-        // $('.toolbar_block').slideToggle(500);
-    });
-
-
-    $(".toolbar_block_item_link").click(function () {
-        $(this).removeClass("on");
-        $('.toolbar_block').slideToggle(500);
-    });
-
-    // $(window).click(function() {
-    //    $(".toolbar_block").removeClass("on");
+    // $(".toolbar_menu_icon").click(function () {
+    //     $(this).toggleClass("on");
+    //     $('.toolbar_block').slideToggle(500);
     // });
-
-    $(window).resize(function() {
-        var wid = $(window).width();
-        if (wid > 992) {
-            $(".toolbar_menu_icon").removeClass('on');
-        }
-    });
+    //
+    // $(".toolbar_block_item_link").click(function () {
+    //     $(".toolbar_menu_icon").removeClass("on");
+    //     // $('.toolbar_block').slideToggle(500);
+    // });
+    //
+    //
+    // $(".toolbar_block_item_link").click(function () {
+    //     $(this).removeClass("on");
+    //     $('.toolbar_block').slideToggle(500);
+    // });
+    //
+    // // $(window).click(function() {
+    // //    $(".toolbar_block").removeClass("on");
+    // // });
+    //
+    // $(window).resize(function() {
+    //     var wid = $(window).width();
+    //     if (wid > 992) {
+    //         $(".toolbar_menu_icon").removeClass('on');
+    //     }
+    // });
 
     // -----post carousel-----//
 
@@ -115,6 +115,32 @@ $(function() {
             e.preventDefault();
             $.magnificPopup.close();
         });
+    });
+
+//    -------------animation
+
+    $(document).ready(function () {
+
+        var show = true;
+        var countbox = ".about_information_container";
+        $(window).on("scroll load resize", function () {
+            if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+            var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+            var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+            var w_height = $(window).height(); // Высота окна браузера
+            var d_height = $(document).height(); // Высота всего документа
+            var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+            if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+                $('.about_information_block_number').css('opacity', '1');
+                $('.about_information_block_number').spincrement({
+                    thousandSeparator: "",
+                    duration: 2000
+                });
+
+                show = false;
+            }
+        });
+
     });
 
 });
